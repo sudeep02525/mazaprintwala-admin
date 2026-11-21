@@ -212,6 +212,101 @@ const DEFAULT_PAYMENTS = {
   ],
 };
 
+const DEFAULT_ABOUT_PAGE = {
+  badge: 'About Maza Printwala',
+  badge_hi: 'Maza Printwala के बारे में',
+  badge_mr: 'Maza Printwala बद्दल',
+  title: 'Precision Industrial Printing For Growing Businesses',
+  title_hi: 'उद्योग-अग्रणी गुणवत्ता, आधुनिक व्यवसायों के लिए तैयार',
+  title_mr: 'उद्योग-अग्रणी गुणवत्ता, आधुनिक व्यवसायांसाठी सज्ज',
+  subtitle: 'From bespoke visiting cards to high-volume commercial packaging, we combine German print machinery with seamless digital convenience.',
+  subtitle_hi: 'प्रीमियम विजिटिंग कार्ड्स से लेकर हाई-वॉल्यूम पैकेजिंग और कॉर्पोरेट परिधान तक, हम जर्मन प्रिंट तकनीक को डिजिटल सुविधा के साथ जोड़ते हैं।',
+  subtitle_mr: 'प्रीमियम व्हिजिटिंग कार्ड्सपासून ते मोठ्या प्रमाणातील पॅकेजिंग आणि कॉर्पोरेट कपड्यांपर्यंत, आम्ही जर्मन तंत्रज्ञानाला डिजिटल सुलभतेशी जोडतो.',
+  story: 'Founded with a mission to eliminate print complexity, Maza Printwala empowers brands, creative agencies, and growing startups across India with world-class printing solutions.\n\nOver the years, we have invested continuously in high-precision Heidelberg offset presses, digital foil and spot-UV finishing stations, and direct-to-garment apparel printing facilities.\n\nWhether you need 100 luxury tactile visiting cards or 50,000 corrugated packaging boxes delivered across multiple branch offices, our manual quality inspection and calibrated color management ensure complete satisfaction.',
+  story_hi: 'Maza Printwala की शुरुआत एक स्पष्ट उद्देश्य के साथ हुई: भारत के हर छोटे-बड़े व्यवसाय, डिज़ाइन एजेंसी और उद्यम को बिना किसी रुकावट के अंतरराष्ट्रीय स्तर की मुद्रण सेवा उपलब्ध कराना।\n\nवर्षों में हमने आधुनिक 4-कलर और 6-कलर ऑफ़सेट मशीनों, डिजिटल फ़ॉइल और स्पॉट यूवी स्टेशनों और अत्याधुनिक डायरेक्ट-टू-गारमेंट सेटअप में निवेश किया है।\n\nआज चाहे आपको 100 विलासी बिजनेस कार्ड चाहिए हों या 50,000 कॉर्पोरेट पैकेजिंग बॉक्स, हमारी समर्पित टीम रंग सटीकता, समय पर डिलीवरी और पारदर्शी फैक्ट्री दरों की गारंटी देती है।',
+  story_mr: 'Maza Printwala ची स्थापना एका स्पष्ट उद्दिष्टाने झाली: भारतातील प्रत्येक व्यवसाय, डिझायनर आणि उद्योगाला आंतरराष्ट्रीय दर्जाची छपाई सेवा सहज उपलब्ध करून देणे.\n\nवर्षानुवर्षे आम्ही आधुनिक ऑफसेट मशिन्स, डिजिटल फॉइल आणि स्पॉट यूव्ही, तसेच अत्याधुनिक डायरेक्ट-टू-गारमेंट युनिट्समध्ये गुंतवणूक केली आहे.\n\nआज तुम्हाला 100 लक्झरी बिझनेस कार्ड्स हवे असोत किंवा 50,000 कॉर्पोरेट बॉक्स, आमची टीम रंग अचूकता आणि वेळेवर वितरणाची खात्री देते.',
+  storyImage: 'https://res.cloudinary.com/kz2pddnr/image/upload/v1795262678/maaza-printwala/images/cat_visiting_cards_new_1785478123231.jpg',
+  stats: [
+    { value: '50,000+', label: 'Happy Clients' },
+    { value: '1.2M+', label: 'Orders Shipped' },
+    { value: '99.8%', label: 'Quality SLA' },
+    { value: '25,000+', label: 'Pin Codes Covered' },
+  ],
+  values: [
+    { title: 'Industrial Precision', desc: 'Imported 400+ GSM art cards, calibrated CMYK color curves, and automated die-cutting.' },
+    { title: 'Direct Factory Rates', desc: 'Transparent wholesale pricing with no middlemen markups and automated B2B GST invoicing.' },
+    { title: 'Fast Pan-India Logistics', desc: 'Insured, door-step delivery across 25,000+ pin codes with live GPS tracking updates.' },
+  ],
+};
+
+const DEFAULT_BULK_ENQUIRY = {
+  badge: 'B2B & Corporate Printing',
+  badge_hi: 'B2B और कॉर्पोरेट प्रिंटिंग',
+  badge_mr: 'B2B आणि कॉर्पोरेट छपाई',
+  title: 'Volume Printing & Custom Bulk Quotes',
+  title_hi: 'थोक मुद्रण एवं कस्टम कॉर्पोरेट कोट्स',
+  title_mr: 'मोठ्या प्रमाणावर छपाई आणि सानुकूल कोट्स',
+  subtitle: 'Need 1,000+ units, custom dies, bespoke packaging, or unified branch stationery? Get direct factory rates and dedicated account management.',
+  subtitle_hi: '1,000+ यूनिट्स, कस्टम डाईज, पैकेजिंग या ब्रांच स्टेशनरी की आवश्यकता है? डायरेक्ट फैक्ट्री दरें और समर्पित खाता प्रबंधन प्राप्त करें।',
+  subtitle_mr: '1,000+ युनिट्स, सानुकूल डाइज किंवा ब्रँच स्टेशनरी हवी आहे? थेट फॅक्टरी दर आणि समर्पित मॅनेजर मिळवा.',
+  guarantee: '🔒 Strictly confidential. We never share enterprise artwork or contact data.',
+  guarantee_hi: '🔒 पूर्णतः गोपनीय। हम आपका व्यावसायिक आर्टवर्क या संपर्क डेटा कभी साझा नहीं करते।',
+  guarantee_mr: '🔒 पूर्णपणे गोपनीय. आम्ही तुमची कलाकृती किंवा संपर्क डेटा कधीही शेअर करत नाही.',
+  buttonText: 'Submit Commercial Quote',
+  buttonText_hi: 'व्यावसायिक कोटेशन सबमिट करें',
+  buttonText_mr: 'व्यावसायिक कोटेशन सादर करा',
+  benefits: [
+    { title: 'Wholesale Tier Rates', desc: 'Up to 45% discount on high volume enterprise contracts.', type: 'sparkles' },
+    { title: 'Complimentary Proofing', desc: 'Physical hardcopy or digital press proof before full production run.', type: 'shield' },
+    { title: '24h Turnaround SLA', desc: 'Dedicated print specialist responds with tailored quotation in 24 hours.', type: 'clock' },
+  ],
+};
+
+const DEFAULT_PAGE_META = {
+  home: {
+    title: 'Maza Printwala | Online Printing Services & Custom Merchandise India',
+    description: 'Order custom business cards, t-shirts, packaging boxes, mugs, and corporate stationery online with fast Pan-India delivery.',
+    keywords: 'printing services, visiting cards, custom tshirts, mug printing, packaging boxes, mumbai print',
+    ogImage: '',
+  },
+  about: {
+    title: 'About Us | Maza Printwala - Crafting Quality Prints Since 2018',
+    description: 'Learn about Maza Printwala print manufacturing, Heidelberg press infrastructure, and B2B corporate print capabilities.',
+    keywords: 'about maza printwala, print factory mumbai, offset printing india',
+    ogImage: '',
+  },
+  bulk: {
+    title: 'B2B Volume & Bulk Printing Quotes | Maza Printwala',
+    description: 'Get factory-direct wholesale quotes for volume printing orders above 1,000 units with dedicated GST invoicing.',
+    keywords: 'bulk printing, wholesale visiting cards, b2b print orders, corporate gifts bulk',
+    ogImage: '',
+  },
+  policies: {
+    title: 'Policies & Customer Service | Maza Printwala',
+    description: 'Review our shipping terms, reprint guarantees, privacy protection, and terms of service.',
+    keywords: 'printwala policies, terms of service, shipping policy, privacy',
+    ogImage: '',
+  },
+};
+
+const DEFAULT_NAVIGATION_MENU = {
+  orderedSlugs: [
+    'visiting-cards',
+    'stationery',
+    'custom-apparel',
+    'marketing-materials',
+    'packaging-boxes',
+    'corporate-gifts',
+    'photo-gifts',
+    'stickers-labels',
+  ],
+  hiddenSlugs: [],
+  customLinks: [
+    { label: 'Bulk Enquiry', href: '/bulk-enquiry', badge: 'Hot', enabled: true },
+    { label: 'About Us', href: '/about', badge: '', enabled: true },
+  ],
+};
+
 const Field = ({ label, value, onChange, placeholder, type = 'text', help }) => (
   <div>
     <label className="block text-xs font-bold text-[var(--text-main)] mb-1.5">{label}</label>
@@ -341,11 +436,28 @@ export default function CMSPage() {
   const [payments, setPayments] = useState(DEFAULT_PAYMENTS);
   const [policies, setPolicies] = useState(DEFAULT_POLICIES);
   const [activePolicyKey, setActivePolicyKey] = useState('privacy');
+  const [aboutPage, setAboutPage] = useState(DEFAULT_ABOUT_PAGE);
+  const [bulkEnquiry, setBulkEnquiry] = useState(DEFAULT_BULK_ENQUIRY);
+  const [pageMeta, setPageMeta] = useState(DEFAULT_PAGE_META);
+  const [activeMetaPage, setActiveMetaPage] = useState('home');
+  const [navMenu, setNavMenu] = useState(DEFAULT_NAVIGATION_MENU);
+  const [faqLocale, setFaqLocale] = useState('en');
+  const [policyLocale, setPolicyLocale] = useState('en');
+  const [aboutLocale, setAboutLocale] = useState('en');
+  const [bulkLocale, setBulkLocale] = useState('en');
 
   const { data, isLoading: isFetching } = useQuery({
     queryKey: ['cms-homepage'],
-    queryFn: () => axiosInstance.get('/cms/homepage'),
+    queryFn: () => axiosInstance.get('/cms/homepage?all=true'),
   });
+
+  const { data: catData } = useQuery({
+    queryKey: ['categories-list'],
+    queryFn: () => axiosInstance.get('/categories'),
+  });
+  const allCategories = Array.isArray(catData?.data)
+    ? catData.data
+    : catData?.data?.categories || catData?.data?.data || [];
 
   useEffect(() => {
     const content = data?.data?.content || [];
@@ -423,6 +535,30 @@ export default function CMSPage() {
       shipping: shippingContent?.content ? { ...prev.shipping, ...shippingContent.content } : prev.shipping,
       returns: returnsContent?.content ? { ...prev.returns, ...returnsContent.content } : prev.returns,
     }));
+
+    // 11. About Page
+    const aboutContent = content.find((c) => c.key === 'about_page');
+    if (aboutContent?.content) {
+      setAboutPage((prev) => ({ ...prev, ...aboutContent.content }));
+    }
+
+    // 12. Bulk Enquiry
+    const bulkContent = content.find((c) => c.key === 'bulk_enquiry');
+    if (bulkContent?.content) {
+      setBulkEnquiry((prev) => ({ ...prev, ...bulkContent.content }));
+    }
+
+    // 13. Page Meta
+    const metaContent = content.find((c) => c.key === 'page_meta');
+    if (metaContent?.content) {
+      setPageMeta((prev) => ({ ...prev, ...metaContent.content }));
+    }
+
+    // 14. Navigation Menu
+    const menuContent = content.find((c) => c.key === 'navigation_menu');
+    if (menuContent?.content) {
+      setNavMenu((prev) => ({ ...prev, ...menuContent.content }));
+    }
   }, [data]);
 
   const saveMutation = useMutation({
@@ -551,6 +687,46 @@ export default function CMSPage() {
       sortOrder: 10,
     });
   };
+
+  const saveAboutPage = () =>
+    saveMutation.mutate({
+      key: 'about_page',
+      section: 'ABOUT',
+      title: 'About Us Page Content',
+      content: aboutPage,
+      isActive: true,
+      sortOrder: 11,
+    });
+
+  const saveBulkEnquiry = () =>
+    saveMutation.mutate({
+      key: 'bulk_enquiry',
+      section: 'BULK_ENQUIRY',
+      title: 'Bulk Enquiry Page Copy',
+      content: bulkEnquiry,
+      isActive: true,
+      sortOrder: 12,
+    });
+
+  const savePageMeta = () =>
+    saveMutation.mutate({
+      key: 'page_meta',
+      section: 'SEO',
+      title: 'Page SEO Metadata & OG Tags',
+      content: pageMeta,
+      isActive: true,
+      sortOrder: 13,
+    });
+
+  const saveNavMenu = () =>
+    saveMutation.mutate({
+      key: 'navigation_menu',
+      section: 'MENU',
+      title: 'Navigation & Mega Menu Ordering',
+      content: navMenu,
+      isActive: true,
+      sortOrder: 14,
+    });
 
   // ---------- Helpers ----------
   const updateSlide = (index, field, value) => {
@@ -747,6 +923,22 @@ export default function CMSPage() {
           </button>
           <button onClick={() => setActiveTab('policies')} className={tabClass('policies')}>
             <span>Policies & Legal</span>
+            <LivePill />
+          </button>
+          <button onClick={() => setActiveTab('about')} className={tabClass('about')}>
+            <span>About Us Page</span>
+            <LivePill />
+          </button>
+          <button onClick={() => setActiveTab('bulk_enquiry')} className={tabClass('bulk_enquiry')}>
+            <span>Bulk Enquiry</span>
+            <LivePill />
+          </button>
+          <button onClick={() => setActiveTab('seo')} className={tabClass('seo')}>
+            <span>Page SEO & Meta</span>
+            <LivePill />
+          </button>
+          <button onClick={() => setActiveTab('menu')} className={tabClass('menu')}>
+            <span>Navigation Menu</span>
             <LivePill />
           </button>
         </div>
@@ -1250,85 +1442,116 @@ export default function CMSPage() {
           ) : activeTab === 'faq' ? (
             /* TAB 7: FAQ MANAGER */
             <div className="space-y-6 max-w-3xl">
-              <div className="flex items-center justify-between">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
                 <div>
                   <h2 className="text-lg font-bold text-[var(--text-main)]">FAQ Manager</h2>
                   <p className="text-xs text-[var(--text-muted)] mt-0.5">
-                    Manage the accordion questions on the homepage. Drag reorder or use arrows.
+                    Manage the accordion questions on the homepage. Drag reorder, toggle active, or localize into Hindi and Marathi.
                   </p>
                 </div>
-                <button
-                  onClick={addFaq}
-                  className="px-4 py-2 neu-flat text-[var(--text-main)] font-bold text-xs rounded-lg transition-colors flex items-center gap-2 cursor-pointer"
-                >
-                  <Plus className="w-3.5 h-3.5 text-[#0082CA]" /> Add Question
-                </button>
+                <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-1 bg-[var(--bg-subtle)] p-1 rounded-lg border border-[var(--border)]">
+                    {[
+                      { code: 'en', label: 'EN' },
+                      { code: 'hi', label: 'हिंदी' },
+                      { code: 'mr', label: 'मराठी' },
+                    ].map((l) => (
+                      <button
+                        key={l.code}
+                        type="button"
+                        onClick={() => setFaqLocale(l.code)}
+                        className={`px-2.5 py-1 text-xs font-bold rounded transition-all cursor-pointer ${
+                          faqLocale === l.code
+                            ? 'bg-[#0082CA] text-white shadow-xs'
+                            : 'text-[var(--text-muted)] hover:text-[var(--text-main)]'
+                        }`}
+                      >
+                        {l.label}
+                      </button>
+                    ))}
+                  </div>
+                  <button
+                    onClick={addFaq}
+                    className="px-4 py-2 neu-flat text-[var(--text-main)] font-bold text-xs rounded-lg transition-colors flex items-center gap-2 cursor-pointer"
+                  >
+                    <Plus className="w-3.5 h-3.5 text-[#0082CA]" /> Add Question
+                  </button>
+                </div>
               </div>
 
               <div className="space-y-4">
-                {faqs.map((faq, index) => (
-                  <div key={index} className="neu-flat rounded-xl p-5 space-y-3 group">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        <span className="text-xs font-extrabold text-[var(--text-muted)] uppercase tracking-wider">
-                          Q{index + 1}
-                        </span>
-                        <div className="flex items-center gap-1">
+                {faqs.map((faq, index) => {
+                  const qKey = faqLocale === 'hi' ? 'question_hi' : faqLocale === 'mr' ? 'question_mr' : 'question';
+                  const aKey = faqLocale === 'hi' ? 'answer_hi' : faqLocale === 'mr' ? 'answer_mr' : 'answer';
+                  const langName = faqLocale === 'hi' ? 'Hindi (हिंदी)' : faqLocale === 'mr' ? 'Marathi (मराठी)' : 'English';
+
+                  return (
+                    <div key={index} className="neu-flat rounded-xl p-5 space-y-3 group">
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-2">
+                          <span className="text-xs font-extrabold text-[var(--text-muted)] uppercase tracking-wider">
+                            Q{index + 1}
+                          </span>
+                          <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-blue-500/10 text-[#0082CA]">
+                            {langName}
+                          </span>
+                          <div className="flex items-center gap-1">
+                            <button
+                              type="button"
+                              disabled={index === 0}
+                              onClick={() => moveFaq(index, -1)}
+                              className="p-1 text-[var(--text-faint)] hover:text-[var(--text-main)] disabled:opacity-30 cursor-pointer"
+                              title="Move Up"
+                            >
+                              <ChevronUp className="w-3.5 h-3.5" />
+                            </button>
+                            <button
+                              type="button"
+                              disabled={index === faqs.length - 1}
+                              onClick={() => moveFaq(index, 1)}
+                              className="p-1 text-[var(--text-faint)] hover:text-[var(--text-main)] disabled:opacity-30 cursor-pointer"
+                              title="Move Down"
+                            >
+                              <ChevronDown className="w-3.5 h-3.5" />
+                            </button>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-3">
+                          <label className="text-xs font-semibold text-[var(--text-muted)] flex items-center gap-1.5 cursor-pointer">
+                            <input
+                              type="checkbox"
+                              checked={Boolean(faq.isActive !== false)}
+                              onChange={(e) => updateFaq(index, 'isActive', e.target.checked)}
+                              className="accent-[#0082CA] rounded cursor-pointer"
+                            />
+                            Active
+                          </label>
                           <button
-                            type="button"
-                            disabled={index === 0}
-                            onClick={() => moveFaq(index, -1)}
-                            className="p-1 text-[var(--text-faint)] hover:text-[var(--text-main)] disabled:opacity-30 cursor-pointer"
-                            title="Move Up"
+                            onClick={() => removeFaq(index)}
+                            className="text-[var(--text-faint)] hover:text-rose-600 p-1 cursor-pointer"
                           >
-                            <ChevronUp className="w-3.5 h-3.5" />
-                          </button>
-                          <button
-                            type="button"
-                            disabled={index === faqs.length - 1}
-                            onClick={() => moveFaq(index, 1)}
-                            className="p-1 text-[var(--text-faint)] hover:text-[var(--text-main)] disabled:opacity-30 cursor-pointer"
-                            title="Move Down"
-                          >
-                            <ChevronDown className="w-3.5 h-3.5" />
+                            <Trash2 className="w-4 h-4" />
                           </button>
                         </div>
                       </div>
-                      <div className="flex items-center gap-3">
-                        <label className="text-xs font-semibold text-[var(--text-muted)] flex items-center gap-1.5 cursor-pointer">
-                          <input
-                            type="checkbox"
-                            checked={Boolean(faq.isActive !== false)}
-                            onChange={(e) => updateFaq(index, 'isActive', e.target.checked)}
-                            className="accent-[#0082CA] rounded cursor-pointer"
-                          />
-                          Active
-                        </label>
-                        <button
-                          onClick={() => removeFaq(index)}
-                          className="text-[var(--text-faint)] hover:text-rose-600 p-1 cursor-pointer"
-                        >
-                          <Trash2 className="w-4 h-4" />
-                        </button>
-                      </div>
+
+                      <Field
+                        label={`Question (${langName})`}
+                        value={faq[qKey] || ''}
+                        onChange={(v) => updateFaq(index, qKey, v)}
+                        placeholder={`Question in ${langName}...`}
+                      />
+
+                      <TextAreaField
+                        label={`Answer (${langName})`}
+                        value={faq[aKey] || ''}
+                        onChange={(v) => updateFaq(index, aKey, v)}
+                        placeholder={`Detailed answer in ${langName}...`}
+                        rows={3}
+                      />
                     </div>
-
-                    <Field
-                      label="Question"
-                      value={faq.question}
-                      onChange={(v) => updateFaq(index, 'question', v)}
-                      placeholder="e.g. Can I order single pieces?"
-                    />
-
-                    <TextAreaField
-                      label="Answer"
-                      value={faq.answer}
-                      onChange={(v) => updateFaq(index, 'answer', v)}
-                      placeholder="Detailed answer text..."
-                      rows={3}
-                    />
-                  </div>
-                ))}
+                  );
+                })}
               </div>
 
               <SaveButton onClick={saveFaqs} label="Save FAQs" />
@@ -1568,14 +1791,36 @@ export default function CMSPage() {
 
               <SaveButton onClick={saveFooter} label="Save Footer & Payment Badges" />
             </div>
-          ) : (
+          ) : activeTab === 'policies' ? (
             /* TAB 10: POLICIES & LEGAL */
             <div className="space-y-6 max-w-3xl">
-              <div>
-                <h2 className="text-lg font-bold text-[var(--text-main)]">Legal & Store Policies</h2>
-                <p className="text-xs text-[var(--text-muted)] mt-0.5">
-                  Update customer policy text without writing HTML or requiring a code deploy.
-                </p>
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                <div>
+                  <h2 className="text-lg font-bold text-[var(--text-main)]">Legal & Store Policies</h2>
+                  <p className="text-xs text-[var(--text-muted)] mt-0.5">
+                    Update customer policy text without writing HTML or requiring a code deploy.
+                  </p>
+                </div>
+                <div className="flex items-center gap-1 bg-[var(--bg-subtle)] p-1 rounded-lg border border-[var(--border)]">
+                  {[
+                    { code: 'en', label: 'EN' },
+                    { code: 'hi', label: 'हिंदी' },
+                    { code: 'mr', label: 'मराठी' },
+                  ].map((l) => (
+                    <button
+                      key={l.code}
+                      type="button"
+                      onClick={() => setPolicyLocale(l.code)}
+                      className={`px-2.5 py-1 text-xs font-bold rounded transition-all cursor-pointer ${
+                        policyLocale === l.code
+                          ? 'bg-[#0082CA] text-white shadow-xs'
+                          : 'text-[var(--text-muted)] hover:text-[var(--text-main)]'
+                      }`}
+                    >
+                      {l.label}
+                    </button>
+                  ))}
+                </div>
               </div>
 
               {/* Subtabs for the 4 policies */}
@@ -1600,51 +1845,521 @@ export default function CMSPage() {
                 ))}
               </div>
 
-              <div className="neu-flat rounded-xl p-6 space-y-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <Field
-                    label="Page / Policy Title"
-                    value={policies[activePolicyKey]?.title}
-                    onChange={(v) =>
-                      setPolicies({
-                        ...policies,
-                        [activePolicyKey]: { ...policies[activePolicyKey], title: v },
-                      })
-                    }
-                  />
-                  <Field
-                    label="Last Updated Notice"
-                    value={policies[activePolicyKey]?.lastUpdated}
-                    onChange={(v) =>
-                      setPolicies({
-                        ...policies,
-                        [activePolicyKey]: { ...policies[activePolicyKey], lastUpdated: v },
-                      })
-                    }
-                    placeholder="e.g. November 2026"
-                  />
-                </div>
+              {(() => {
+                const titleKey = policyLocale === 'hi' ? 'title_hi' : policyLocale === 'mr' ? 'title_mr' : 'title';
+                const bodyKey = policyLocale === 'hi' ? 'body_hi' : policyLocale === 'mr' ? 'body_mr' : 'body';
+                const langLabel = policyLocale === 'hi' ? 'Hindi (हिंदी)' : policyLocale === 'mr' ? 'Marathi (मराठी)' : 'English';
 
-                <TextAreaField
-                  label="Policy Document Body"
-                  value={policies[activePolicyKey]?.body}
-                  onChange={(v) =>
-                    setPolicies({
-                      ...policies,
-                      [activePolicyKey]: { ...policies[activePolicyKey], body: v },
-                    })
-                  }
-                  rows={10}
-                  help="Plain text or multi-paragraph guidelines. Storefront preserves paragraph breaks."
-                />
-              </div>
+                return (
+                  <div className="neu-flat rounded-xl p-6 space-y-4">
+                    <div className="flex items-center justify-between pb-2 border-b border-[var(--border)]">
+                      <span className="text-xs font-bold text-[var(--text-muted)]">
+                        Editing Language: <span className="text-[#0082CA] font-extrabold">{langLabel}</span>
+                      </span>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <Field
+                        label={`Page / Policy Title (${langLabel})`}
+                        value={policies[activePolicyKey]?.[titleKey] || ''}
+                        onChange={(v) =>
+                          setPolicies({
+                            ...policies,
+                            [activePolicyKey]: { ...policies[activePolicyKey], [titleKey]: v },
+                          })
+                        }
+                      />
+                      <Field
+                        label="Last Updated Notice"
+                        value={policies[activePolicyKey]?.lastUpdated}
+                        onChange={(v) =>
+                          setPolicies({
+                            ...policies,
+                            [activePolicyKey]: { ...policies[activePolicyKey], lastUpdated: v },
+                          })
+                        }
+                        placeholder="e.g. November 2026"
+                      />
+                    </div>
+
+                    <TextAreaField
+                      label={`Policy Document Body (${langLabel})`}
+                      value={policies[activePolicyKey]?.[bodyKey] || ''}
+                      onChange={(v) =>
+                        setPolicies({
+                          ...policies,
+                          [activePolicyKey]: { ...policies[activePolicyKey], [bodyKey]: v },
+                        })
+                      }
+                      rows={10}
+                      help={`Storefront displays this text when user selects ${langLabel}. If left blank, falls back to English.`}
+                    />
+                  </div>
+                );
+              })()}
 
               <SaveButton
                 onClick={() => savePolicy(activePolicyKey)}
                 label={`Save ${policies[activePolicyKey]?.title || 'Policy'}`}
               />
             </div>
-          )}
+          ) : activeTab === 'about' ? (
+            /* TAB 11: ABOUT US PAGE */
+            <div className="space-y-6 max-w-3xl">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                <div>
+                  <h2 className="text-lg font-bold text-[var(--text-main)]">About Us Page Content</h2>
+                  <p className="text-xs text-[var(--text-muted)] mt-0.5">
+                    Manage the public /about page story, machinery credentials, statistics, and brand values.
+                  </p>
+                </div>
+                <div className="flex items-center gap-1 bg-[var(--bg-subtle)] p-1 rounded-lg border border-[var(--border)]">
+                  {[
+                    { code: 'en', label: 'EN' },
+                    { code: 'hi', label: 'हिंदी' },
+                    { code: 'mr', label: 'मराठी' },
+                  ].map((l) => (
+                    <button
+                      key={l.code}
+                      type="button"
+                      onClick={() => setAboutLocale(l.code)}
+                      className={`px-2.5 py-1 text-xs font-bold rounded transition-all cursor-pointer ${
+                        aboutLocale === l.code
+                          ? 'bg-[#0082CA] text-white shadow-xs'
+                          : 'text-[var(--text-muted)] hover:text-[var(--text-main)]'
+                      }`}
+                    >
+                      {l.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {(() => {
+                const badgeKey = aboutLocale === 'hi' ? 'badge_hi' : aboutLocale === 'mr' ? 'badge_mr' : 'badge';
+                const titleKey = aboutLocale === 'hi' ? 'title_hi' : aboutLocale === 'mr' ? 'title_mr' : 'title';
+                const subtitleKey = aboutLocale === 'hi' ? 'subtitle_hi' : aboutLocale === 'mr' ? 'subtitle_mr' : 'subtitle';
+                const storyKey = aboutLocale === 'hi' ? 'story_hi' : aboutLocale === 'mr' ? 'story_mr' : 'story';
+                const langLabel = aboutLocale === 'hi' ? 'Hindi (हिंदी)' : aboutLocale === 'mr' ? 'Marathi (मराठी)' : 'English';
+
+                return (
+                  <div className="space-y-6">
+                    <div className="neu-flat rounded-xl p-6 space-y-4">
+                      <span className="text-xs font-bold text-[var(--text-muted)] block pb-2 border-b border-[var(--border)]">
+                        Header & Story Copy ({langLabel})
+                      </span>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <Field
+                          label={`Badge Text (${langLabel})`}
+                          value={aboutPage[badgeKey] || ''}
+                          onChange={(v) => setAboutPage({ ...aboutPage, [badgeKey]: v })}
+                          placeholder="e.g. About Maza Printwala"
+                        />
+                        <Field
+                          label={`Main Headline (${langLabel})`}
+                          value={aboutPage[titleKey] || ''}
+                          onChange={(v) => setAboutPage({ ...aboutPage, [titleKey]: v })}
+                          placeholder="e.g. Precision Industrial Printing"
+                        />
+                      </div>
+                      <Field
+                        label={`Subtitle / Intro (${langLabel})`}
+                        value={aboutPage[subtitleKey] || ''}
+                        onChange={(v) => setAboutPage({ ...aboutPage, [subtitleKey]: v })}
+                        placeholder="Brief overview summary..."
+                      />
+                      <TextAreaField
+                        label={`Company Story Narrative (${langLabel})`}
+                        value={aboutPage[storyKey] || ''}
+                        onChange={(v) => setAboutPage({ ...aboutPage, [storyKey]: v })}
+                        rows={6}
+                        placeholder="Detailed story paragraphs..."
+                        help="Double line breaks create separate paragraphs on the storefront."
+                      />
+                    </div>
+
+                    <div className="neu-flat rounded-xl p-6 space-y-4">
+                      <span className="text-xs font-bold text-[var(--text-muted)] block pb-2 border-b border-[var(--border)]">
+                        Story Visual Media & Stats
+                      </span>
+                      <ImageField
+                        label="About Story Image (Upload to Cloudinary)"
+                        value={aboutPage.storyImage}
+                        onChange={(url) => setAboutPage({ ...aboutPage, storyImage: url })}
+                        placeholder="https://res.cloudinary.com/... or click Upload"
+                        help="Recommended dimensions: 900x700px JPEG/WebP."
+                      />
+
+                      <div className="pt-2">
+                        <label className="block text-xs font-bold text-[var(--text-main)] mb-2">4 Key Performance Counters</label>
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                          {(aboutPage.stats || []).map((st, sIdx) => (
+                            <div key={sIdx} className="p-3 neu-flat rounded-lg space-y-2">
+                              <input
+                                type="text"
+                                value={st.value}
+                                onChange={(e) => {
+                                  const nextStats = [...aboutPage.stats];
+                                  nextStats[sIdx] = { ...nextStats[sIdx], value: e.target.value };
+                                  setAboutPage({ ...aboutPage, stats: nextStats });
+                                }}
+                                placeholder="50,000+"
+                                className="w-full text-xs font-black text-[#0082CA] bg-transparent outline-none"
+                              />
+                              <input
+                                type="text"
+                                value={st.label}
+                                onChange={(e) => {
+                                  const nextStats = [...aboutPage.stats];
+                                  nextStats[sIdx] = { ...nextStats[sIdx], label: e.target.value };
+                                  setAboutPage({ ...aboutPage, stats: nextStats });
+                                }}
+                                placeholder="Happy Clients"
+                                className="w-full text-[11px] font-bold text-[var(--text-muted)] bg-transparent outline-none"
+                              />
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="neu-flat rounded-xl p-6 space-y-4">
+                      <span className="text-xs font-bold text-[var(--text-muted)] block pb-2 border-b border-[var(--border)]">
+                        3 Core Pillars / Values
+                      </span>
+                      <div className="space-y-3">
+                        {(aboutPage.values || []).map((val, vIdx) => (
+                          <div key={vIdx} className="p-3 neu-flat rounded-lg grid grid-cols-1 md:grid-cols-3 gap-3">
+                            <input
+                              type="text"
+                              value={val.title}
+                              onChange={(e) => {
+                                const nextVals = [...aboutPage.values];
+                                nextVals[vIdx] = { ...nextVals[vIdx], title: e.target.value };
+                                setAboutPage({ ...aboutPage, values: nextVals });
+                              }}
+                              placeholder="Pillar Title"
+                              className="text-xs font-bold text-[var(--text-main)] bg-transparent outline-none"
+                            />
+                            <input
+                              type="text"
+                              value={val.desc}
+                              onChange={(e) => {
+                                const nextVals = [...aboutPage.values];
+                                nextVals[vIdx] = { ...nextVals[vIdx], desc: e.target.value };
+                                setAboutPage({ ...aboutPage, values: nextVals });
+                              }}
+                              placeholder="Short description..."
+                              className="md:col-span-2 text-xs text-[var(--text-muted)] bg-transparent outline-none"
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })()}
+
+              <SaveButton onClick={saveAboutPage} label="Save About Page" />
+            </div>
+          ) : activeTab === 'bulk_enquiry' ? (
+            /* TAB 12: BULK ENQUIRY PAGE */
+            <div className="space-y-6 max-w-3xl">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                <div>
+                  <h2 className="text-lg font-bold text-[var(--text-main)]">Bulk & B2B Enquiry Copy</h2>
+                  <p className="text-xs text-[var(--text-muted)] mt-0.5">
+                    Customize commercial wholesale quotes headline, tier discount claims, and guarantee notices.
+                  </p>
+                </div>
+                <div className="flex items-center gap-1 bg-[var(--bg-subtle)] p-1 rounded-lg border border-[var(--border)]">
+                  {[
+                    { code: 'en', label: 'EN' },
+                    { code: 'hi', label: 'हिंदी' },
+                    { code: 'mr', label: 'मराठी' },
+                  ].map((l) => (
+                    <button
+                      key={l.code}
+                      type="button"
+                      onClick={() => setBulkLocale(l.code)}
+                      className={`px-2.5 py-1 text-xs font-bold rounded transition-all cursor-pointer ${
+                        bulkLocale === l.code
+                          ? 'bg-[#0082CA] text-white shadow-xs'
+                          : 'text-[var(--text-muted)] hover:text-[var(--text-main)]'
+                      }`}
+                    >
+                      {l.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {(() => {
+                const badgeKey = bulkLocale === 'hi' ? 'badge_hi' : bulkLocale === 'mr' ? 'badge_mr' : 'badge';
+                const titleKey = bulkLocale === 'hi' ? 'title_hi' : bulkLocale === 'mr' ? 'title_mr' : 'title';
+                const subtitleKey = bulkLocale === 'hi' ? 'subtitle_hi' : bulkLocale === 'mr' ? 'subtitle_mr' : 'subtitle';
+                const guaranteeKey = bulkLocale === 'hi' ? 'guarantee_hi' : bulkLocale === 'mr' ? 'guarantee_mr' : 'guarantee';
+                const btnKey = bulkLocale === 'hi' ? 'buttonText_hi' : bulkLocale === 'mr' ? 'buttonText_mr' : 'buttonText';
+                const langLabel = bulkLocale === 'hi' ? 'Hindi (हिंदी)' : bulkLocale === 'mr' ? 'Marathi (मराठी)' : 'English';
+
+                return (
+                  <div className="neu-flat rounded-xl p-6 space-y-4">
+                    <span className="text-xs font-bold text-[var(--text-muted)] block pb-2 border-b border-[var(--border)]">
+                      Commercial Copy ({langLabel})
+                    </span>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <Field
+                        label={`Header Badge (${langLabel})`}
+                        value={bulkEnquiry[badgeKey] || ''}
+                        onChange={(v) => setBulkEnquiry({ ...bulkEnquiry, [badgeKey]: v })}
+                        placeholder="e.g. B2B & Corporate Printing"
+                      />
+                      <Field
+                        label={`Page Headline (${langLabel})`}
+                        value={bulkEnquiry[titleKey] || ''}
+                        onChange={(v) => setBulkEnquiry({ ...bulkEnquiry, [titleKey]: v })}
+                        placeholder="e.g. Volume Printing & Custom Bulk Quotes"
+                      />
+                    </div>
+                    <Field
+                      label={`Intro Subtitle (${langLabel})`}
+                      value={bulkEnquiry[subtitleKey] || ''}
+                      onChange={(v) => setBulkEnquiry({ ...bulkEnquiry, [subtitleKey]: v })}
+                      placeholder="Explain volume criteria and pricing incentives..."
+                    />
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <Field
+                        label={`Guarantee Note (${langLabel})`}
+                        value={bulkEnquiry[guaranteeKey] || ''}
+                        onChange={(v) => setBulkEnquiry({ ...bulkEnquiry, [guaranteeKey]: v })}
+                        placeholder="🔒 Strictly confidential. We never share enterprise artwork..."
+                      />
+                      <Field
+                        label={`Submit CTA Button Label (${langLabel})`}
+                        value={bulkEnquiry[btnKey] || ''}
+                        onChange={(v) => setBulkEnquiry({ ...bulkEnquiry, [btnKey]: v })}
+                        placeholder="e.g. Submit Commercial Quote"
+                      />
+                    </div>
+
+                    <div className="pt-3">
+                      <label className="block text-xs font-bold text-[var(--text-main)] mb-2">3 Advantage Badges</label>
+                      <div className="space-y-3">
+                        {(bulkEnquiry.benefits || []).map((b, bIdx) => (
+                          <div key={bIdx} className="p-3 neu-flat rounded-lg grid grid-cols-1 md:grid-cols-3 gap-3">
+                            <input
+                              type="text"
+                              value={b.title}
+                              onChange={(e) => {
+                                const nextB = [...bulkEnquiry.benefits];
+                                nextB[bIdx] = { ...nextB[bIdx], title: e.target.value };
+                                setBulkEnquiry({ ...bulkEnquiry, benefits: nextB });
+                              }}
+                              placeholder="Title"
+                              className="text-xs font-bold text-[var(--text-main)] bg-transparent outline-none"
+                            />
+                            <input
+                              type="text"
+                              value={b.desc}
+                              onChange={(e) => {
+                                const nextB = [...bulkEnquiry.benefits];
+                                nextB[bIdx] = { ...nextB[bIdx], desc: e.target.value };
+                                setBulkEnquiry({ ...bulkEnquiry, benefits: nextB });
+                              }}
+                              placeholder="Description..."
+                              className="md:col-span-2 text-xs text-[var(--text-muted)] bg-transparent outline-none"
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })()}
+
+              <SaveButton onClick={saveBulkEnquiry} label="Save Bulk Enquiry Copy" />
+            </div>
+          ) : activeTab === 'seo' ? (
+            /* TAB 13: PAGE SEO & META */
+            <div className="space-y-6 max-w-3xl">
+              <div>
+                <h2 className="text-lg font-bold text-[var(--text-main)]">Page SEO Metadata & OpenGraph</h2>
+                <p className="text-xs text-[var(--text-muted)] mt-0.5">
+                  Configure search engine titles, meta descriptions, and social share image cards for major storefront routes.
+                </p>
+              </div>
+
+              {/* Subtabs for routes */}
+              <div className="flex gap-2 border-b border-[var(--border)] pb-2 overflow-x-auto">
+                {[
+                  { id: 'home', label: 'Homepage' },
+                  { id: 'about', label: 'About Us' },
+                  { id: 'bulk', label: 'Bulk Enquiry' },
+                  { id: 'policies', label: 'Policies' },
+                ].map((pg) => (
+                  <button
+                    key={pg.id}
+                    onClick={() => setActiveMetaPage(pg.id)}
+                    className={`px-4 py-2 text-xs font-bold rounded-lg transition-colors cursor-pointer ${
+                      activeMetaPage === pg.id
+                        ? 'bg-[#0082CA] text-white shadow-xs'
+                        : 'neu-flat text-[var(--text-muted)] hover:text-[var(--text-main)]'
+                    }`}
+                  >
+                    {pg.label}
+                  </button>
+                ))}
+              </div>
+
+              <div className="neu-flat rounded-xl p-6 space-y-4">
+                <Field
+                  label="Browser & Search Title"
+                  value={pageMeta[activeMetaPage]?.title}
+                  onChange={(v) =>
+                    setPageMeta({
+                      ...pageMeta,
+                      [activeMetaPage]: { ...pageMeta[activeMetaPage], title: v },
+                    })
+                  }
+                  placeholder="e.g. Maza Printwala | Online Printing Services"
+                  help="Optimal length: 50-60 characters."
+                />
+
+                <TextAreaField
+                  label="Search Meta Description"
+                  value={pageMeta[activeMetaPage]?.description}
+                  onChange={(v) =>
+                    setPageMeta({
+                      ...pageMeta,
+                      [activeMetaPage]: { ...pageMeta[activeMetaPage], description: v },
+                    })
+                  }
+                  rows={3}
+                  placeholder="Search snippet summary..."
+                  help="Optimal length: 140-160 characters."
+                />
+
+                <Field
+                  label="Keywords (comma separated)"
+                  value={pageMeta[activeMetaPage]?.keywords}
+                  onChange={(v) =>
+                    setPageMeta({
+                      ...pageMeta,
+                      [activeMetaPage]: { ...pageMeta[activeMetaPage], keywords: v },
+                    })
+                  }
+                  placeholder="printing, visiting cards, bulk print, corporate gifting"
+                />
+
+                <ImageField
+                  label="Social Share / OG Image (Upload to Cloudinary)"
+                  value={pageMeta[activeMetaPage]?.ogImage}
+                  onChange={(url) =>
+                    setPageMeta({
+                      ...pageMeta,
+                      [activeMetaPage]: { ...pageMeta[activeMetaPage], ogImage: url },
+                    })
+                  }
+                  placeholder="https://res.cloudinary.com/... or click Upload"
+                  help="Recommended size: 1200x630px. Used by WhatsApp, Facebook, LinkedIn, Twitter preview cards."
+                />
+              </div>
+
+              <SaveButton onClick={savePageMeta} label={`Save ${activeMetaPage.toUpperCase()} Metadata`} />
+            </div>
+          ) : activeTab === 'menu' ? (
+            /* TAB 14: NAVIGATION MENU */
+            <div className="space-y-6 max-w-3xl">
+              <div>
+                <h2 className="text-lg font-bold text-[var(--text-main)]">Navigation & Mega Menu Sequence</h2>
+                <p className="text-xs text-[var(--text-muted)] mt-0.5">
+                  Control which categories appear first in the horizontal header strip and mega menu dropdown.
+                </p>
+              </div>
+
+              <div className="neu-flat rounded-xl p-6 space-y-4">
+                <span className="text-xs font-bold text-[var(--text-muted)] block pb-2 border-b border-[var(--border)]">
+                  Category Display Sequence & Visibility
+                </span>
+                <div className="space-y-2">
+                  {(navMenu.orderedSlugs || []).map((slug, idx) => {
+                    const catObj = allCategories.find((c) => c.slug === slug);
+                    const displayName = catObj?.name || slug.replace(/-/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase());
+                    const isHidden = (navMenu.hiddenSlugs || []).includes(slug);
+
+                    return (
+                      <div
+                        key={slug}
+                        className={`flex items-center justify-between p-3 rounded-lg border transition-all ${
+                          isHidden
+                            ? 'neu-flat/40 border-dashed border-[var(--border)] opacity-60'
+                            : 'neu-flat border-[var(--border)]'
+                        }`}
+                      >
+                        <div className="flex items-center gap-3">
+                          <span className="text-xs font-black text-[#0082CA] w-6">{idx + 1}.</span>
+                          <div>
+                            <span className="text-xs font-bold text-[var(--text-main)]">{displayName}</span>
+                            <span className="text-[10px] text-[var(--text-muted)] ml-2">({slug})</span>
+                          </div>
+                        </div>
+
+                        <div className="flex items-center gap-2">
+                          <label className="text-xs font-semibold text-[var(--text-muted)] flex items-center gap-1.5 cursor-pointer mr-2">
+                            <input
+                              type="checkbox"
+                              checked={!isHidden}
+                              onChange={(e) => {
+                                const currentHidden = navMenu.hiddenSlugs || [];
+                                const nextHidden = e.target.checked
+                                  ? currentHidden.filter((s) => s !== slug)
+                                  : [...currentHidden, slug];
+                                setNavMenu({ ...navMenu, hiddenSlugs: nextHidden });
+                              }}
+                              className="accent-[#0082CA] rounded cursor-pointer"
+                            />
+                            Visible
+                          </label>
+                          <button
+                            type="button"
+                            disabled={idx === 0}
+                            onClick={() => {
+                              const nextOrder = [...navMenu.orderedSlugs];
+                              const temp = nextOrder[idx - 1];
+                              nextOrder[idx - 1] = nextOrder[idx];
+                              nextOrder[idx] = temp;
+                              setNavMenu({ ...navMenu, orderedSlugs: nextOrder });
+                            }}
+                            className="p-1 text-[var(--text-faint)] hover:text-[var(--text-main)] disabled:opacity-20 cursor-pointer"
+                            title="Move Up"
+                          >
+                            <ChevronUp className="w-4 h-4" />
+                          </button>
+                          <button
+                            type="button"
+                            disabled={idx === navMenu.orderedSlugs.length - 1}
+                            onClick={() => {
+                              const nextOrder = [...navMenu.orderedSlugs];
+                              const temp = nextOrder[idx + 1];
+                              nextOrder[idx + 1] = nextOrder[idx];
+                              nextOrder[idx] = temp;
+                              setNavMenu({ ...navMenu, orderedSlugs: nextOrder });
+                            }}
+                            className="p-1 text-[var(--text-faint)] hover:text-[var(--text-main)] disabled:opacity-20 cursor-pointer"
+                            title="Move Down"
+                          >
+                            <ChevronDown className="w-4 h-4" />
+                          </button>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <SaveButton onClick={saveNavMenu} label="Save Menu Sequence" />
+            </div>
+          ) : null}
         </div>
       </div>
     </div>
