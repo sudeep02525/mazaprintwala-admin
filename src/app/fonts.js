@@ -1,15 +1,23 @@
-import { Manrope } from 'next/font/google';
+import { Fraunces, Public_Sans } from 'next/font/google';
 
 /**
- * Admin typography
- * ----------------
- * One family, three weights. Dashboards need scanability, not personality:
- * order numbers, dates, amounts and status badges all read cleanest in a
- * neutral geometric sans. The storefront's display serif is deliberately
- * NOT used here.
+ * Admin typography - matches the storefront
+ * -----------------------------------------
+ * Display : Fraunces     -> page titles, section headings, KPI numbers
+ * Body    : Public Sans  -> tables, forms, buttons, labels
+ *
+ * The same two families the customer sees on the website, self-hosted by
+ * next/font (no request to Google, no layout shift). Fraunces is used without
+ * the SOFT / WONK / opsz axes here so the admin bundle stays small.
  */
-export const fontAdmin = Manrope({
+export const fontDisplay = Fraunces({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-manrope',
+  variable: '--font-fraunces',
+});
+
+export const fontBody = Public_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-public-sans',
 });

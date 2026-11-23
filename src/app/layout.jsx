@@ -1,4 +1,4 @@
-import { fontAdmin } from './fonts.js';
+import { fontDisplay, fontBody } from './fonts.js';
 import { cookies } from 'next/headers';
 import './globals.css';
 import QueryProvider from '../providers/QueryProvider.jsx';
@@ -20,7 +20,7 @@ export default async function RootLayout({ children }) {
   const isDark = theme === 'dark';
 
   return (
-    <html lang="en" suppressHydrationWarning className={`${fontAdmin.variable} ${isDark ? 'dark' : ''}`}>
+    <html lang="en" suppressHydrationWarning className={`${fontDisplay.variable} ${fontBody.variable} ${isDark ? 'dark' : ''}`}>
       <body className="text-[var(--text-main)] font-sans antialiased h-screen overflow-hidden flex bg-[var(--bg-page)] transition-colors">
         <QueryProvider>
           <AdminShell>{children}</AdminShell>

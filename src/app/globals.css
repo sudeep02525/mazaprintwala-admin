@@ -3,10 +3,12 @@
 
 /* ============================================================
    TYPOGRAPHY TOKEN  (Tailwind v4)
-   Manrope, injected as --font-manrope by next/font in layout.jsx
+   Fraunces + Public Sans, injected by next/font in layout.jsx.
+   Same two families as the storefront.
    ============================================================ */
 @theme {
-  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: var(--font-public-sans), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
 }
 
 
@@ -91,10 +93,17 @@
   body {
     background-color: var(--bg-page);
     color: var(--text-main);
-    font-family: var(--font-manrope), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: var(--font-public-sans), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
     transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  /* ---- Brand headings - same treatment as the storefront ---- */
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.025em;
+    font-optical-sizing: auto;
   }
 }
 

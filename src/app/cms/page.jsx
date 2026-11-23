@@ -574,7 +574,7 @@ export default function CMSPage() {
     : catData?.data?.categories || catData?.data?.data || [];
 
   useEffect(() => {
-    const content = data?.data?.content || [];
+    const content = Array.isArray(data?.data?.content) ? data.data.content : [];
 
     // 1. Hero
     const heroContent = content.find((c) => c.key === 'homepage_hero');
@@ -981,12 +981,6 @@ export default function CMSPage() {
         : 'text-[var(--text-muted)] hover:neu-flat/50 border-transparent'
     }`;
 
-  const LivePill = () => (
-    <span className="text-[10px] font-bold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 px-2 py-0.5 rounded-full">
-      Live
-    </span>
-  );
-
   return (
     <div className="p-8 space-y-8">
       <div>
@@ -1001,59 +995,45 @@ export default function CMSPage() {
         <div className="w-full md:w-64 neu-flat p-4 space-y-1.5 shrink-0 border-r border-[var(--border)]">
           <button onClick={() => setActiveTab('hero')} className={tabClass('hero')}>
             <span>Hero Slider</span>
-            <LivePill />
           </button>
           <button onClick={() => setActiveTab('banners')} className={tabClass('banners')}>
             <span>Promotional Banners</span>
-            <LivePill />
           </button>
           <button onClick={() => setActiveTab('offer')} className={tabClass('offer')}>
             <span>Announcement Strip</span>
-            <LivePill />
           </button>
           <button onClick={() => setActiveTab('categories')} className={tabClass('categories')}>
             <span>Category Tiles</span>
-            <LivePill />
           </button>
           <button onClick={() => setActiveTab('headings')} className={tabClass('headings')}>
             <span>Section Headings</span>
-            <LivePill />
           </button>
           <button onClick={() => setActiveTab('trust')} className={tabClass('trust')}>
             <span>Trust Strip</span>
-            <LivePill />
           </button>
           <button onClick={() => setActiveTab('faq')} className={tabClass('faq')}>
             <span>FAQ Manager</span>
-            <LivePill />
           </button>
           <button onClick={() => setActiveTab('contact')} className={tabClass('contact')}>
             <span>Contact Details</span>
-            <LivePill />
           </button>
           <button onClick={() => setActiveTab('footer')} className={tabClass('footer')}>
             <span>Footer & Payments</span>
-            <LivePill />
           </button>
           <button onClick={() => setActiveTab('policies')} className={tabClass('policies')}>
             <span>Policies & Legal</span>
-            <LivePill />
           </button>
           <button onClick={() => setActiveTab('about')} className={tabClass('about')}>
             <span>About Us Page</span>
-            <LivePill />
           </button>
           <button onClick={() => setActiveTab('bulk_enquiry')} className={tabClass('bulk_enquiry')}>
             <span>Bulk Enquiry</span>
-            <LivePill />
           </button>
           <button onClick={() => setActiveTab('seo')} className={tabClass('seo')}>
             <span>Page SEO & Meta</span>
-            <LivePill />
           </button>
           <button onClick={() => setActiveTab('menu')} className={tabClass('menu')}>
             <span>Navigation Menu</span>
-            <LivePill />
           </button>
         </div>
 
@@ -1082,6 +1062,22 @@ export default function CMSPage() {
               </div>
 
               <div className="space-y-4">
+                {heroSlides.length === 0 && (
+                  <div className="neu-flat rounded-xl p-10 text-center">
+                    <ImageIcon className="w-8 h-8 mx-auto mb-3 text-[var(--text-faint)]" />
+                    <p className="text-sm font-bold text-[var(--text-main)]">No hero slide yet</p>
+                    <p className="text-xs text-[var(--text-muted)] mt-1 max-w-sm mx-auto">
+                      The homepage is showing its built-in banner. Add a slide with an image and a
+                      title to replace it.
+                    </p>
+                    <button
+                      onClick={addSlide}
+                      className="mt-4 px-4 py-2 neu-flat text-[#0082CA] font-bold text-xs rounded-lg inline-flex items-center gap-2"
+                    >
+                      <Plus className="w-3.5 h-3.5" /> Add your first slide
+                    </button>
+                  </div>
+                )}
                 {heroSlides.map((slide, index) => (
                   <div key={index} className="neu-flat rounded-xl p-4 flex gap-4 group">
                     <div className="cursor-move pt-2 text-[var(--text-faint)]">
