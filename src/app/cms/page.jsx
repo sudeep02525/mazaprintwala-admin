@@ -45,8 +45,14 @@ const DEFAULT_FOOTER = {
 const DEFAULT_OFFER_STRIP = {
   isActive: false,
   badge: 'SPECIAL OFFER',
+  badge_hi: 'विशेष ऑफर',
+  badge_mr: 'विशेष ऑफर',
   text: 'Flat 40% OFF on all Bulk & Corporate Orders | Free Pan-India Delivery',
+  text_hi: 'सभी बल्क और कॉर्पोरेट ऑर्डर पर फ्लैट 40% की छूट | मुफ़्त अखिल भारतीय डिलीवरी',
+  text_mr: 'सर्व मोठ्या आणि कॉर्पोरेट ऑर्डर्सवर 40% सूट | मोफत भारतभर वितरण',
   linkLabel: 'Order Now',
+  linkLabel_hi: 'अभी ऑर्डर करें',
+  linkLabel_mr: 'आता ऑर्डर करा',
   linkTarget: '/products',
   bgStyle: 'blue',
 };
@@ -136,11 +142,24 @@ const DEFAULT_CONTACT = {
   whatsappNumber: '+91 7700054984',
   supportEmail: 'imagemazaprintwala@gmail.com',
   addressLine1: 'Shop No. 4, Commercial Print Hub',
+  addressLine1_hi: 'दुकान नं. 4, कमर्शियल प्रिंट हब',
+  addressLine1_mr: 'दुकान क्र. 4, कमर्शियल प्रिंट हब',
   addressLine2: 'Market Yard Road',
+  addressLine2_hi: 'मार्केट यार्ड रोड',
+  addressLine2_mr: 'मार्केट यार्ड रोड',
   city: 'Mumbai',
+  city_hi: 'मुंबई',
+  city_mr: 'मुंबई',
   state: 'Maharashtra',
+  state_hi: 'महाराष्ट्र',
+  state_mr: 'महाराष्ट्र',
   pincode: '400001',
   workingHours: 'Mon - Sat: 10:00 AM - 7:00 PM',
+  workingHours_hi: 'सोम - शनि: 10:00 पूर्वाह्न - 7:00 अपराह्न',
+  workingHours_mr: 'सोम - शनि: सकाळी 10:00 - संध्याकाळी 7:00',
+  physicalAddress: '',
+  physicalAddress_hi: '',
+  physicalAddress_mr: '',
   gstin: '27AAAAA0000A1Z5',
 };
 
@@ -170,45 +189,67 @@ const DEFAULT_POLICIES = {
 const DEFAULT_CATEGORY_BLOCKS = [
   {
     title: 'Business Essentials',
+    title_hi: 'बिजनेस एसेंशियल्स',
+    title_mr: 'बिझनेस एसेंशियल्स',
     tiles: [
-      { name: 'Visiting Cards', img: 'https://res.cloudinary.com/kz2pddnr/image/upload/v1795262678/maaza-printwala/images/cat_visiting_cards_new_1785478123231.jpg', link: '/visiting-cards', isActive: true },
-      { name: 'Notebooks', img: 'https://res.cloudinary.com/kz2pddnr/image/upload/v1795262673/maaza-printwala/images/cat_notebooks_new_1785478132458.jpg', link: '/stationery?sub=notebooks', isActive: true },
-      { name: 'Custom Mugs', img: 'https://res.cloudinary.com/kz2pddnr/image/upload/v1795262674/maaza-printwala/images/cat_mugs_new_1785478141544.jpg', link: '/products?search=mug', isActive: true },
-      { name: 'Custom Clothing, Bags & Caps', img: 'https://res.cloudinary.com/kz2pddnr/image/upload/v1795262671/maaza-printwala/images/cat_clothing_new_1785478162007.jpg', link: '/products?search=apparel', isActive: true },
+      { name: 'Visiting Cards', name_hi: 'विजिटिंग कार्ड्स', name_mr: 'व्हिजिटिंग कार्ड्स', img: 'https://res.cloudinary.com/kz2pddnr/image/upload/v1795262678/maaza-printwala/images/cat_visiting_cards_new_1785478123231.jpg', link: '/visiting-cards', isActive: true },
+      { name: 'Notebooks', name_hi: 'नोटबुक्स व डायरी', name_mr: 'नोटबुक्स आणि डायरी', img: 'https://res.cloudinary.com/kz2pddnr/image/upload/v1795262673/maaza-printwala/images/cat_notebooks_new_1785478132458.jpg', link: '/stationery?sub=notebooks', isActive: true },
+      { name: 'Custom Mugs', name_hi: 'कस्टम प्रिंटेड मग्स', name_mr: 'कस्टम प्रिंटेड मग्स', img: 'https://res.cloudinary.com/kz2pddnr/image/upload/v1795262674/maaza-printwala/images/cat_mugs_new_1785478141544.jpg', link: '/products?search=mug', isActive: true },
+      { name: 'Custom Clothing, Bags & Caps', name_hi: 'कस्टम परिधान, बैग और कैप', name_mr: 'सानुकूल कपडे, बॅग्ज आणि टोप्या', img: 'https://res.cloudinary.com/kz2pddnr/image/upload/v1795262671/maaza-printwala/images/cat_clothing_new_1785478162007.jpg', link: '/products?search=apparel', isActive: true },
     ],
   },
   {
     title: 'Custom Apparel',
+    title_hi: 'कस्टम परिधान (Apparel)',
+    title_mr: 'सानुकूल कपडे (Apparel)',
     tiles: [
-      { name: 'Custom Polo T-shirts', img: 'https://res.cloudinary.com/kz2pddnr/image/upload/v1795262676/maaza-printwala/images/cat_polo_new_1785478171451.jpg', link: '/products?search=polo', isActive: true },
-      { name: 'Custom T-shirts', img: 'https://res.cloudinary.com/kz2pddnr/image/upload/v1795262677/maaza-printwala/images/cat_tshirt_new_1785478181285.jpg', link: '/products?search=t-shirt', isActive: true },
-      { name: 'Custom Formal Shirts', img: 'https://res.cloudinary.com/kz2pddnr/image/upload/v1795262668/maaza-printwala/images/cat_formal_new_1785478190948.jpg', link: '/products?search=apparel', isActive: true },
-      { name: 'Caps', img: 'https://res.cloudinary.com/kz2pddnr/image/upload/v1795262663/maaza-printwala/images/cat_caps_new_1785478209032.jpg', link: '/products?search=cap', isActive: true },
+      { name: 'Custom Polo T-shirts', name_hi: 'पोलो टी-शर्ट्स', name_mr: 'पोलो टी-शर्ट्स', img: 'https://res.cloudinary.com/kz2pddnr/image/upload/v1795262676/maaza-printwala/images/cat_polo_new_1785478171451.jpg', link: '/products?search=polo', isActive: true },
+      { name: 'Custom T-shirts', name_hi: 'कॉटन टी-शर्ट्स', name_mr: 'कॉटन टी-शर्ट्स', img: 'https://res.cloudinary.com/kz2pddnr/image/upload/v1795262677/maaza-printwala/images/cat_tshirt_new_1785478181285.jpg', link: '/products?search=t-shirt', isActive: true },
+      { name: 'Custom Formal Shirts', name_hi: 'फॉर्मल शर्ट्स', name_mr: 'फॉर्मल शर्ट्स', img: 'https://res.cloudinary.com/kz2pddnr/image/upload/v1795262668/maaza-printwala/images/cat_formal_new_1785478190948.jpg', link: '/products?search=apparel', isActive: true },
+      { name: 'Caps', name_hi: 'प्रिंटेड कैप्स', name_mr: 'प्रिंटेड टोप्या', img: 'https://res.cloudinary.com/kz2pddnr/image/upload/v1795262663/maaza-printwala/images/cat_caps_new_1785478209032.jpg', link: '/products?search=cap', isActive: true },
     ],
   },
 ];
 
 const DEFAULT_HOME_HEADINGS = {
   bestSellersTitle: 'Best Selling Products',
+  bestSellersTitle_hi: 'सबसे ज्यादा बिकने वाले उत्पाद',
+  bestSellersTitle_mr: 'सर्वाधिक विक्री होणारी उत्पादने',
   bestSellersSubtitle: 'Most ordered commercial print and merchandise products',
+  bestSellersSubtitle_hi: 'व्यावसायिक प्रिंट एवं मर्चेंडाइज़ के सबसे लोकप्रिय उत्पाद',
+  bestSellersSubtitle_mr: 'सर्वाधिक लोकप्रिय व्यावसायिक प्रिंट आणि उत्पादने',
   newArrivalsTitle: 'New Arrivals & Fresh Templates',
+  newArrivalsTitle_hi: 'नए आगमन और फ्रेश टेम्प्लेट्स',
+  newArrivalsTitle_mr: 'नवीन उत्पादने आणि टेम्पलेट्स',
   newArrivalsSubtitle: 'Fresh new templates and products',
+  newArrivalsSubtitle_hi: 'ताज़ा नए टेम्प्लेट और डिज़ाइन उत्पाद',
+  newArrivalsSubtitle_mr: 'ताजी नवीन टेम्पलेट्स आणि डिझाइन उत्पादने',
   corporateTitle: 'Corporate Essentials & Gifting',
+  corporateTitle_hi: 'कॉर्पोरेट एसेंशियल्स और गिफ्टिंग',
+  corporateTitle_mr: 'कॉर्पोरेट एसेंशियल्स आणि गिफ्टिंग',
   corporateSubtitle: 'Bulk corporate solutions with custom GST invoicing',
+  corporateSubtitle_hi: 'कस्टम GST इनवॉइसिंग के साथ थोक कॉर्पोरेट समाधान',
+  corporateSubtitle_mr: 'सानुकूल GST इनव्हॉइसिंगसह कॉर्पोरेट उपाय',
   trendingTitle: 'Trending Print Catalogue',
+  trendingTitle_hi: 'ट्रेंडिंग प्रिंट कैटलॉग',
+  trendingTitle_mr: 'ट्रेंडिंग प्रिंट कॅटलॉग',
   trendingSubtitle: 'Top rated commercial solutions popular this month',
+  trendingSubtitle_hi: 'इस महीने के शीर्ष रेटेड व्यावसायिक समाधान',
+  trendingSubtitle_mr: 'या महिन्यातील टॉप रेटेड व्यावसायिक सोल्यूशन्स',
   popularSearchesTitle: 'Popular Searches',
+  popularSearchesTitle_hi: 'लोकप्रिय खोजें',
+  popularSearchesTitle_mr: 'लोकप्रिय शोध',
 };
 
 const DEFAULT_PAYMENTS = {
   enabled: true,
   badges: [
-    { id: 'visa', label: 'VISA', enabled: true },
-    { id: 'mc', label: 'Mastercard', enabled: true },
-    { id: 'upi', label: 'UPI', enabled: true },
-    { id: 'rupay', label: 'RuPay', enabled: true },
-    { id: 'netbanking', label: 'Net Banking', enabled: false },
-    { id: 'cod', label: 'Cash on Delivery', enabled: false },
+    { id: 'visa', label: 'VISA', label_hi: 'VISA', label_mr: 'VISA', enabled: true },
+    { id: 'mc', label: 'Mastercard', label_hi: 'मास्टरकार्ड', label_mr: 'मास्टरकार्ड', enabled: true },
+    { id: 'upi', label: 'UPI', label_hi: 'UPI', label_mr: 'UPI', enabled: true },
+    { id: 'rupay', label: 'RuPay', label_hi: 'रुपे (RuPay)', label_mr: 'रुपे (RuPay)', enabled: true },
+    { id: 'netbanking', label: 'Net Banking', label_hi: 'नेट बैंकिंग', label_mr: 'नेट बँकिंग', enabled: false },
+    { id: 'cod', label: 'Cash on Delivery', label_hi: 'कैश ऑन डिलीवरी', label_mr: 'कॅश ऑन डिलिव्हरी', enabled: false },
   ],
 };
 
@@ -265,26 +306,50 @@ const DEFAULT_BULK_ENQUIRY = {
 const DEFAULT_PAGE_META = {
   home: {
     title: 'Maza Printwala | Online Printing Services & Custom Merchandise India',
+    title_hi: 'Maza Printwala | ऑनलाइन प्रिंटिंग सेवाएं और कस्टम मर्चेंडाइज',
+    title_mr: 'Maza Printwala | ऑनलाइन प्रिंटिंग सेवा आणि सानुकूल उत्पादने',
     description: 'Order custom business cards, t-shirts, packaging boxes, mugs, and corporate stationery online with fast Pan-India delivery.',
+    description_hi: 'विजिटिंग कार्ड, टी-शर्ट, पैकेजिंग बॉक्स, मग और कॉर्पोरेट स्टेशनरी ऑनलाइन ऑर्डर करें तेज अखिल भारतीय डिलीवरी के साथ।',
+    description_mr: 'व्हिजिटिंग कार्ड, टी-शर्ट, पॅकेजिंग बॉक्सेस, मग आणि स्टेशनरी ऑनलाइन ऑर्डर करा जलद अखिल भारतीय डिलिव्हरीसह.',
     keywords: 'printing services, visiting cards, custom tshirts, mug printing, packaging boxes, mumbai print',
+    keywords_hi: 'प्रिंटिंग सेवाएं, विजिटिंग कार्ड, कस्टम टीशर्ट, मग प्रिंटिंग, पैकेजिंग बॉक्स',
+    keywords_mr: 'प्रिंटिंग सेवा, व्हिजिटिंग कार्ड, सानुकूल टीशर्ट, मग प्रिंटिंग, पॅकेजिंग बॉक्स',
     ogImage: '',
   },
   about: {
     title: 'About Us | Maza Printwala - Crafting Quality Prints Since 2018',
+    title_hi: 'हमारे बारे में | Maza Printwala - 2018 से गुणवत्तापूर्ण मुद्रण',
+    title_mr: 'आमच्याबद्दल | Maza Printwala - 2018 पासून दर्जेदार छपाई',
     description: 'Learn about Maza Printwala print manufacturing, Heidelberg press infrastructure, and B2B corporate print capabilities.',
+    description_hi: 'Maza Printwala की प्रिंट निर्माण क्षमता, हाइडेलबर्ग प्रेस इंफ्रास्ट्रक्चर और B2B कॉर्पोरेट प्रिंट समाधानों के बारे में जानें।',
+    description_mr: 'Maza Printwala ची छपाई क्षमता, हायडेलबर्ग प्रेस पायाभूत सुविधा आणि B2B कॉर्पोरेट प्रिंट सोल्यूशन्सबद्दल जाणून घ्या.',
     keywords: 'about maza printwala, print factory mumbai, offset printing india',
+    keywords_hi: 'माझा प्रिंटवाला, प्रिंट फैक्ट्री मुंबई, ऑफसेट प्रिंटिंग भारत',
+    keywords_mr: 'माझा प्रिंटवाला, प्रिंट फॅक्टरी मुंबई, ऑफसेट प्रिंटिंग भारत',
     ogImage: '',
   },
   bulk: {
     title: 'B2B Volume & Bulk Printing Quotes | Maza Printwala',
+    title_hi: 'B2B थोक प्रिंटिंग कोट्स | Maza Printwala',
+    title_mr: 'B2B मोठ्या प्रमाणावर छपाई कोट्स | Maza Printwala',
     description: 'Get factory-direct wholesale quotes for volume printing orders above 1,000 units with dedicated GST invoicing.',
+    description_hi: '1,000 से अधिक यूनिट्स के वॉल्यूम प्रिंटिंग ऑर्डर्स के लिए समर्पित GST इनवॉइसिंग के साथ डायरेक्ट फैक्ट्री कोट्स प्राप्त करें।',
+    description_mr: '1,000 पेक्षा जास्त युनिट्सच्या मोठ्या ऑर्डर्ससाठी समर्पित GST इनव्हॉइसिंगसह थेट फॅक्टरी कोट्स मिळवा.',
     keywords: 'bulk printing, wholesale visiting cards, b2b print orders, corporate gifts bulk',
+    keywords_hi: 'थोक प्रिंटिंग, व्यावसायिक विजिटिंग कार्ड, कॉर्पोरेट गिफ्ट्स थोक',
+    keywords_mr: 'मोठ्या प्रमाणावर छपाई, व्हिजिटिंग कार्ड्स, कॉर्पोरेट भेटवस्तू',
     ogImage: '',
   },
   policies: {
     title: 'Policies & Customer Service | Maza Printwala',
+    title_hi: 'नीतियां और ग्राहक सेवा | Maza Printwala',
+    title_mr: 'धोरणे आणि ग्राहक सेवा | Maza Printwala',
     description: 'Review our shipping terms, reprint guarantees, privacy protection, and terms of service.',
+    description_hi: 'हमारी शिपिंग शर्तें, पुनर्मुद्रण गारंटी, गोपनीयता सुरक्षा और सेवा की शर्तें पढ़ें।',
+    description_mr: 'आमच्या शिपिंग अटी, पुनर्छपाई हमी, गोपनीयता संरक्षण आणि सेवा अटी तपासा.',
     keywords: 'printwala policies, terms of service, shipping policy, privacy',
+    keywords_hi: 'प्रिंटवाला नीतियां, सेवा की शर्तें, शिपिंग नीति, गोपनीयता',
+    keywords_mr: 'प्रिंटवाला धोरणे, सेवा अटी, शिपिंग धोरण, गोपनीयता',
     ogImage: '',
   },
 };
@@ -301,11 +366,53 @@ const DEFAULT_NAVIGATION_MENU = {
     'stickers-labels',
   ],
   hiddenSlugs: [],
+  labels: {},
   customLinks: [
-    { label: 'Bulk Enquiry', href: '/bulk-enquiry', badge: 'Hot', enabled: true },
-    { label: 'About Us', href: '/about', badge: '', enabled: true },
+    {
+      label: 'Bulk Enquiry',
+      label_hi: 'थोक पूछताछ',
+      label_mr: 'मोठी मागणी',
+      href: '/bulk-enquiry',
+      badge: 'Hot',
+      badge_hi: 'हॉट',
+      badge_mr: 'हॉट',
+      enabled: true,
+    },
+    {
+      label: 'About Us',
+      label_hi: 'हमारे बारे में',
+      label_mr: 'आमच्याबद्दल',
+      href: '/about',
+      badge: '',
+      badge_hi: '',
+      badge_mr: '',
+      enabled: true,
+    },
   ],
 };
+
+const LocaleSelector = ({ current, onChange }) => (
+  <div className="flex items-center gap-1 bg-[var(--bg-subtle)] p-1 rounded-lg border border-[var(--border)] shrink-0">
+    {[
+      { code: 'en', label: 'EN' },
+      { code: 'hi', label: 'हिंदी' },
+      { code: 'mr', label: 'मराठी' },
+    ].map((l) => (
+      <button
+        key={l.code}
+        type="button"
+        onClick={() => onChange(l.code)}
+        className={`px-2.5 py-1 text-xs font-bold rounded transition-all cursor-pointer ${
+          current === l.code
+            ? 'bg-[#0082CA] text-white shadow-xs'
+            : 'text-[var(--text-muted)] hover:text-[var(--text-main)]'
+        }`}
+      >
+        {l.label}
+      </button>
+    ))}
+  </div>
+);
 
 const Field = ({ label, value, onChange, placeholder, type = 'text', help }) => (
   <div>
@@ -445,6 +552,13 @@ export default function CMSPage() {
   const [policyLocale, setPolicyLocale] = useState('en');
   const [aboutLocale, setAboutLocale] = useState('en');
   const [bulkLocale, setBulkLocale] = useState('en');
+  const [headingsLocale, setHeadingsLocale] = useState('en');
+  const [categoriesLocale, setCategoriesLocale] = useState('en');
+  const [contactLocale, setContactLocale] = useState('en');
+  const [offerLocale, setOfferLocale] = useState('en');
+  const [menuLocale, setMenuLocale] = useState('en');
+  const [seoLocale, setSeoLocale] = useState('en');
+  const [paymentLocale, setPaymentLocale] = useState('en');
 
   const { data, isLoading: isFetching } = useQuery({
     queryKey: ['cms-homepage'],
@@ -746,9 +860,9 @@ export default function CMSPage() {
   const removeBanner = (index) => setBanners(banners.filter((_, i) => i !== index));
 
   // Category Blocks Helpers
-  const updateBlockTitle = (bi, title) => {
+  const updateBlockTitle = (bi, title, field = 'title') => {
     const next = [...categoryBlocks];
-    next[bi] = { ...next[bi], title };
+    next[bi] = { ...next[bi], [field]: title };
     setCategoryBlocks(next);
   };
   const addBlock = () => {
@@ -1088,273 +1202,307 @@ export default function CMSPage() {
           ) : activeTab === 'offer' ? (
             /* TAB 3: ANNOUNCEMENT / OFFER STRIP */
             <div className="space-y-6 max-w-3xl">
-              <div>
-                <h2 className="text-lg font-bold text-[var(--text-main)]">Announcement / Offer Strip</h2>
-                <p className="text-xs text-[var(--text-muted)] mt-0.5">
-                  Appears at the very top of the storefront above the main header. Dismissible per browser session.
-                </p>
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                <div>
+                  <h2 className="text-lg font-bold text-[var(--text-main)]">Announcement / Offer Strip</h2>
+                  <p className="text-xs text-[var(--text-muted)] mt-0.5">
+                    Appears at the very top of the storefront above the main header. Dismissible per browser session.
+                  </p>
+                </div>
+                <LocaleSelector current={offerLocale} onChange={setOfferLocale} />
               </div>
 
-              <div className="neu-flat rounded-xl p-6 space-y-5">
-                <div className="flex items-center justify-between pb-4 border-b border-[var(--border)]">
-                  <div>
-                    <label className="text-sm font-bold text-[var(--text-main)] block">Strip Visibility</label>
-                    <p className="text-xs text-[var(--text-muted)]">Toggle this to show or hide the announcement bar across the site.</p>
+              {(() => {
+                const textKey = offerLocale === 'hi' ? 'text_hi' : offerLocale === 'mr' ? 'text_mr' : 'text';
+                const badgeKey = offerLocale === 'hi' ? 'badge_hi' : offerLocale === 'mr' ? 'badge_mr' : 'badge';
+                const linkKey = offerLocale === 'hi' ? 'linkLabel_hi' : offerLocale === 'mr' ? 'linkLabel_mr' : 'linkLabel';
+                const langLabel = offerLocale === 'hi' ? 'Hindi (हिंदी)' : offerLocale === 'mr' ? 'Marathi (मराठी)' : 'English';
+
+                return (
+                  <div className="neu-flat rounded-xl p-6 space-y-5">
+                    <div className="flex items-center justify-between pb-4 border-b border-[var(--border)]">
+                      <div>
+                        <label className="text-sm font-bold text-[var(--text-main)] block">Strip Visibility</label>
+                        <p className="text-xs text-[var(--text-muted)]">Toggle this to show or hide the announcement bar across the site.</p>
+                      </div>
+                      <input
+                        type="checkbox"
+                        checked={Boolean(offerStrip.isActive)}
+                        onChange={(e) => setOfferStrip({ ...offerStrip, isActive: e.target.checked })}
+                        className="w-5 h-5 accent-[#0082CA] rounded cursor-pointer"
+                      />
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <Field
+                        label={`Badge Text (${langLabel})`}
+                        value={offerStrip[badgeKey] || ''}
+                        onChange={(v) => setOfferStrip({ ...offerStrip, [badgeKey]: v })}
+                        placeholder="e.g. SPECIAL OFFER, FLASH SALE"
+                      />
+                      <div>
+                        <label className="block text-xs font-bold text-[var(--text-main)] mb-1.5">Color Theme</label>
+                        <select
+                          value={offerStrip.bgStyle || 'blue'}
+                          onChange={(e) => setOfferStrip({ ...offerStrip, bgStyle: e.target.value })}
+                          className="w-full px-3 py-2 neu-flat rounded-lg focus:ring-2 focus:ring-[var(--border-strong)] focus:border-[var(--text-main)] outline-none text-sm text-[var(--text-main)] bg-[var(--bg-card)]"
+                        >
+                          <option value="blue">Blue / Brand Primary</option>
+                          <option value="dark">Midnight Dark (Slate 900)</option>
+                          <option value="amber">Warm Amber Gold</option>
+                          <option value="emerald">Emerald Green</option>
+                          <option value="crimson">Crimson Red</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <Field
+                      label={`Announcement Message (${langLabel})`}
+                      value={offerStrip[textKey] || ''}
+                      onChange={(v) => setOfferStrip({ ...offerStrip, [textKey]: v })}
+                      placeholder="e.g. Flat 40% OFF on all Bulk Orders | Free Pan-India Delivery"
+                    />
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <Field
+                        label={`Link Button Text (${langLabel})`}
+                        value={offerStrip[linkKey] || ''}
+                        onChange={(v) => setOfferStrip({ ...offerStrip, [linkKey]: v })}
+                        placeholder="e.g. Order Now, Shop Deals"
+                      />
+                      <Field
+                        label="Link Target URL"
+                        value={offerStrip.linkTarget}
+                        onChange={(v) => setOfferStrip({ ...offerStrip, linkTarget: v })}
+                        placeholder="/products or https://..."
+                      />
+                    </div>
                   </div>
-                  <input
-                    type="checkbox"
-                    checked={Boolean(offerStrip.isActive)}
-                    onChange={(e) => setOfferStrip({ ...offerStrip, isActive: e.target.checked })}
-                    className="w-5 h-5 accent-[#0082CA] rounded cursor-pointer"
-                  />
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <Field
-                    label="Badge Text"
-                    value={offerStrip.badge}
-                    onChange={(v) => setOfferStrip({ ...offerStrip, badge: v })}
-                    placeholder="e.g. SPECIAL OFFER, FLASH SALE"
-                  />
-                  <div>
-                    <label className="block text-xs font-bold text-[var(--text-main)] mb-1.5">Color Theme</label>
-                    <select
-                      value={offerStrip.bgStyle || 'blue'}
-                      onChange={(e) => setOfferStrip({ ...offerStrip, bgStyle: e.target.value })}
-                      className="w-full px-3 py-2 neu-flat rounded-lg focus:ring-2 focus:ring-[var(--border-strong)] focus:border-[var(--text-main)] outline-none text-sm text-[var(--text-main)] bg-[var(--bg-card)]"
-                    >
-                      <option value="blue">Blue / Brand Primary</option>
-                      <option value="dark">Midnight Dark (Slate 900)</option>
-                      <option value="amber">Warm Amber Gold</option>
-                      <option value="emerald">Emerald Green</option>
-                      <option value="crimson">Crimson Red</option>
-                    </select>
-                  </div>
-                </div>
-
-                <Field
-                  label="Announcement Message"
-                  value={offerStrip.text}
-                  onChange={(v) => setOfferStrip({ ...offerStrip, text: v })}
-                  placeholder="e.g. Flat 40% OFF on all Bulk Orders | Free Pan-India Delivery"
-                />
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <Field
-                    label="Link Button Text (optional)"
-                    value={offerStrip.linkLabel}
-                    onChange={(v) => setOfferStrip({ ...offerStrip, linkLabel: v })}
-                    placeholder="e.g. Order Now, Shop Deals"
-                  />
-                  <Field
-                    label="Link Target URL"
-                    value={offerStrip.linkTarget}
-                    onChange={(v) => setOfferStrip({ ...offerStrip, linkTarget: v })}
-                    placeholder="/products or https://..."
-                  />
-                </div>
-              </div>
+                );
+              })()}
 
               <SaveButton onClick={saveOfferStrip} label="Save Announcement Strip" />
             </div>
           ) : activeTab === 'categories' ? (
             /* TAB 4: CATEGORY TILES (VISUAL CATEGORIES) */
             <div className="space-y-6 max-w-4xl">
-              <div className="flex items-center justify-between">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
                 <div>
                   <h2 className="text-lg font-bold text-[var(--text-main)]">Homepage Category Tiles</h2>
                   <p className="text-xs text-[var(--text-muted)] mt-0.5">
                     Customize the 2-block square visual category tiles (Business Essentials, Custom Apparel, etc.) on the homepage.
                   </p>
                 </div>
-                <button
-                  onClick={addBlock}
-                  className="px-4 py-2 neu-flat text-[var(--text-main)] font-bold text-xs rounded-lg transition-colors flex items-center gap-2 cursor-pointer"
-                >
-                  <Plus className="w-3.5 h-3.5 text-[#0082CA]" /> Add Category Block
-                </button>
+                <div className="flex items-center gap-2">
+                  <LocaleSelector current={categoriesLocale} onChange={setCategoriesLocale} />
+                  <button
+                    onClick={addBlock}
+                    className="px-4 py-2 neu-flat text-[var(--text-main)] font-bold text-xs rounded-lg transition-colors flex items-center gap-2 cursor-pointer"
+                  >
+                    <Plus className="w-3.5 h-3.5 text-[#0082CA]" /> Add Category Block
+                  </button>
+                </div>
               </div>
 
-              <div className="space-y-8">
-                {categoryBlocks.map((block, bi) => (
-                  <div key={bi} className="neu-flat rounded-2xl p-6 space-y-5 border border-[var(--border)]">
-                    <div className="flex items-center justify-between pb-3 border-b border-[var(--border)]">
-                      <div className="flex-1 max-w-md">
-                        <Field
-                          label={`Block ${bi + 1} Heading`}
-                          value={block.title}
-                          onChange={(v) => updateBlockTitle(bi, v)}
-                          placeholder="e.g. Business Essentials"
-                        />
-                      </div>
-                      <div className="flex items-center gap-3 pt-4">
-                        <button
-                          onClick={() => addTile(bi)}
-                          className="px-3 py-1.5 neu-flat text-xs font-bold text-[#0082CA] rounded-lg flex items-center gap-1 cursor-pointer"
-                        >
-                          <Plus className="w-3 h-3" /> Add Tile
-                        </button>
-                        <button
-                          onClick={() => removeBlock(bi)}
-                          className="p-1.5 text-[var(--text-faint)] hover:text-rose-600 rounded-lg cursor-pointer"
-                          title="Delete Block"
-                        >
-                          <Trash2 className="w-4 h-4" />
-                        </button>
-                      </div>
-                    </div>
+              {(() => {
+                const titleKey = categoriesLocale === 'hi' ? 'title_hi' : categoriesLocale === 'mr' ? 'title_mr' : 'title';
+                const nameKey = categoriesLocale === 'hi' ? 'name_hi' : categoriesLocale === 'mr' ? 'name_mr' : 'name';
+                const langLabel = categoriesLocale === 'hi' ? 'Hindi (हिंदी)' : categoriesLocale === 'mr' ? 'Marathi (मराठी)' : 'English';
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      {(block.tiles || []).map((tile, ti) => (
-                        <div key={ti} className="neu-flat rounded-xl p-4 space-y-3 relative group">
-                          <div className="flex items-center justify-between">
-                            <span className="text-xs font-bold text-[var(--text-muted)] uppercase">Tile #{ti + 1}</span>
-                            <div className="flex items-center gap-2">
-                              <label className="text-[11px] font-semibold text-[var(--text-muted)] flex items-center gap-1">
-                                <input
-                                  type="checkbox"
-                                  checked={tile.isActive !== false}
-                                  onChange={(e) => updateTile(bi, ti, 'isActive', e.target.checked)}
-                                  className="accent-[#0082CA] rounded"
-                                />
-                                Active
-                              </label>
-                              <button
-                                onClick={() => removeTile(bi, ti)}
-                                className="text-[var(--text-faint)] hover:text-rose-600 p-1 cursor-pointer"
-                              >
-                                <Trash2 className="w-3.5 h-3.5" />
-                              </button>
-                            </div>
+                return (
+                  <div className="space-y-8">
+                    {categoryBlocks.map((block, bi) => (
+                      <div key={bi} className="neu-flat rounded-2xl p-6 space-y-5 border border-[var(--border)]">
+                        <div className="flex items-center justify-between pb-3 border-b border-[var(--border)]">
+                          <div className="flex-1 max-w-md">
+                            <Field
+                              label={`Block ${bi + 1} Heading (${langLabel})`}
+                              value={block[titleKey] || ''}
+                              onChange={(v) => updateBlockTitle(bi, v, titleKey)}
+                              placeholder="e.g. Business Essentials"
+                            />
                           </div>
-
-                          <Field
-                            label="Tile Title / Label"
-                            value={tile.name}
-                            onChange={(v) => updateTile(bi, ti, 'name', v)}
-                            placeholder="e.g. Visiting Cards"
-                          />
-
-                          <ImageField
-                            label="Tile Image"
-                            value={tile.img}
-                            onChange={(v) => updateTile(bi, ti, 'img', v)}
-                            placeholder="https://res.cloudinary.com/... or upload"
-                          />
-
-                          <Field
-                            label="Target URL"
-                            value={tile.link}
-                            onChange={(v) => updateTile(bi, ti, 'link', v)}
-                            placeholder="/visiting-cards or /products?search=..."
-                          />
+                          <div className="flex items-center gap-3 pt-4">
+                            <button
+                              onClick={() => addTile(bi)}
+                              className="px-3 py-1.5 neu-flat text-xs font-bold text-[#0082CA] rounded-lg flex items-center gap-1 cursor-pointer"
+                            >
+                              <Plus className="w-3 h-3" /> Add Tile
+                            </button>
+                            <button
+                              onClick={() => removeBlock(bi)}
+                              className="p-1.5 text-[var(--text-faint)] hover:text-rose-600 rounded-lg cursor-pointer"
+                              title="Delete Block"
+                            >
+                              <Trash2 className="w-4 h-4" />
+                            </button>
+                          </div>
                         </div>
-                      ))}
-                    </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          {(block.tiles || []).map((tile, ti) => (
+                            <div key={ti} className="neu-flat rounded-xl p-4 space-y-3 relative group">
+                              <div className="flex items-center justify-between">
+                                <span className="text-xs font-bold text-[var(--text-muted)] uppercase">Tile #{ti + 1}</span>
+                                <div className="flex items-center gap-2">
+                                  <label className="text-[11px] font-semibold text-[var(--text-muted)] flex items-center gap-1">
+                                    <input
+                                      type="checkbox"
+                                      checked={tile.isActive !== false}
+                                      onChange={(e) => updateTile(bi, ti, 'isActive', e.target.checked)}
+                                      className="accent-[#0082CA] rounded"
+                                    />
+                                    Active
+                                  </label>
+                                  <button
+                                    onClick={() => removeTile(bi, ti)}
+                                    className="text-[var(--text-faint)] hover:text-rose-600 p-1 cursor-pointer"
+                                  >
+                                    <Trash2 className="w-3.5 h-3.5" />
+                                  </button>
+                                </div>
+                              </div>
+
+                              <Field
+                                label={`Tile Title / Label (${langLabel})`}
+                                value={tile[nameKey] || ''}
+                                onChange={(v) => updateTile(bi, ti, nameKey, v)}
+                                placeholder="e.g. Visiting Cards"
+                              />
+
+                              <ImageField
+                                label="Tile Image"
+                                value={tile.img}
+                                onChange={(v) => updateTile(bi, ti, 'img', v)}
+                                placeholder="https://res.cloudinary.com/... or upload"
+                              />
+
+                              <Field
+                                label="Target URL"
+                                value={tile.link}
+                                onChange={(v) => updateTile(bi, ti, 'link', v)}
+                                placeholder="/visiting-cards or /products?search=..."
+                              />
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
+                );
+              })()}
 
               <SaveButton onClick={saveCategoryTiles} label="Save Category Tiles" />
             </div>
           ) : activeTab === 'headings' ? (
             /* TAB 5: HOME SECTION HEADINGS */
             <div className="space-y-6 max-w-3xl">
-              <div>
-                <h2 className="text-lg font-bold text-[var(--text-main)]">Home Section Headings</h2>
-                <p className="text-xs text-[var(--text-muted)] mt-0.5">
-                  Customize the titles and subtitles rendered above each major storefront product section on the homepage.
-                </p>
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                <div>
+                  <h2 className="text-lg font-bold text-[var(--text-main)]">Home Section Headings</h2>
+                  <p className="text-xs text-[var(--text-muted)] mt-0.5">
+                    Customize the titles and subtitles rendered above each major storefront product section on the homepage.
+                  </p>
+                </div>
+                <LocaleSelector current={headingsLocale} onChange={setHeadingsLocale} />
               </div>
 
-              <div className="neu-flat rounded-xl p-6 space-y-6">
-                {/* Best Sellers */}
-                <div className="space-y-3">
-                  <h3 className="text-xs font-extrabold uppercase tracking-wider text-[#0082CA]">Best Sellers Section</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <Field
-                      label="Section Title"
-                      value={homeHeadings.bestSellersTitle}
-                      onChange={(v) => setHomeHeadings({ ...homeHeadings, bestSellersTitle: v })}
-                      placeholder="Best Selling Products"
-                    />
-                    <Field
-                      label="Section Subtitle"
-                      value={homeHeadings.bestSellersSubtitle}
-                      onChange={(v) => setHomeHeadings({ ...homeHeadings, bestSellersSubtitle: v })}
-                      placeholder="Most ordered commercial print and merchandise products"
-                    />
-                  </div>
-                </div>
+              {(() => {
+                const suffix = headingsLocale === 'hi' ? '_hi' : headingsLocale === 'mr' ? '_mr' : '';
+                const langLabel = headingsLocale === 'hi' ? 'Hindi (हिंदी)' : headingsLocale === 'mr' ? 'Marathi (मराठी)' : 'English';
+                const fKey = (name) => `${name}${suffix}`;
 
-                {/* New Arrivals */}
-                <div className="space-y-3 pt-4 border-t border-[var(--border)]">
-                  <h3 className="text-xs font-extrabold uppercase tracking-wider text-[#0082CA]">New Arrivals Section</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <Field
-                      label="Section Title"
-                      value={homeHeadings.newArrivalsTitle}
-                      onChange={(v) => setHomeHeadings({ ...homeHeadings, newArrivalsTitle: v })}
-                      placeholder="New Arrivals & Fresh Templates"
-                    />
-                    <Field
-                      label="Section Subtitle"
-                      value={homeHeadings.newArrivalsSubtitle}
-                      onChange={(v) => setHomeHeadings({ ...homeHeadings, newArrivalsSubtitle: v })}
-                      placeholder="Fresh new templates and products"
-                    />
-                  </div>
-                </div>
+                return (
+                  <div className="neu-flat rounded-xl p-6 space-y-6">
+                    {/* Best Sellers */}
+                    <div className="space-y-3">
+                      <h3 className="text-xs font-extrabold uppercase tracking-wider text-[#0082CA]">Best Sellers Section</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <Field
+                          label={`Section Title (${langLabel})`}
+                          value={homeHeadings[fKey('bestSellersTitle')] || ''}
+                          onChange={(v) => setHomeHeadings({ ...homeHeadings, [fKey('bestSellersTitle')]: v })}
+                          placeholder="Best Selling Products"
+                        />
+                        <Field
+                          label={`Section Subtitle (${langLabel})`}
+                          value={homeHeadings[fKey('bestSellersSubtitle')] || ''}
+                          onChange={(v) => setHomeHeadings({ ...homeHeadings, [fKey('bestSellersSubtitle')]: v })}
+                          placeholder="Most ordered commercial print and merchandise products"
+                        />
+                      </div>
+                    </div>
 
-                {/* Corporate Essentials */}
-                <div className="space-y-3 pt-4 border-t border-[var(--border)]">
-                  <h3 className="text-xs font-extrabold uppercase tracking-wider text-[#0082CA]">Corporate & Business Printing</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <Field
-                      label="Section Title"
-                      value={homeHeadings.corporateTitle}
-                      onChange={(v) => setHomeHeadings({ ...homeHeadings, corporateTitle: v })}
-                      placeholder="Corporate Essentials & Gifting"
-                    />
-                    <Field
-                      label="Section Subtitle"
-                      value={homeHeadings.corporateSubtitle}
-                      onChange={(v) => setHomeHeadings({ ...homeHeadings, corporateSubtitle: v })}
-                      placeholder="Bulk corporate solutions with custom GST invoicing"
-                    />
-                  </div>
-                </div>
+                    {/* New Arrivals */}
+                    <div className="space-y-3 pt-4 border-t border-[var(--border)]">
+                      <h3 className="text-xs font-extrabold uppercase tracking-wider text-[#0082CA]">New Arrivals Section</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <Field
+                          label={`Section Title (${langLabel})`}
+                          value={homeHeadings[fKey('newArrivalsTitle')] || ''}
+                          onChange={(v) => setHomeHeadings({ ...homeHeadings, [fKey('newArrivalsTitle')]: v })}
+                          placeholder="New Arrivals & Fresh Templates"
+                        />
+                        <Field
+                          label={`Section Subtitle (${langLabel})`}
+                          value={homeHeadings[fKey('newArrivalsSubtitle')] || ''}
+                          onChange={(v) => setHomeHeadings({ ...homeHeadings, [fKey('newArrivalsSubtitle')]: v })}
+                          placeholder="Fresh new templates and products"
+                        />
+                      </div>
+                    </div>
 
-                {/* Trending Products */}
-                <div className="space-y-3 pt-4 border-t border-[var(--border)]">
-                  <h3 className="text-xs font-extrabold uppercase tracking-wider text-[#0082CA]">Trending / Top Rated Section</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <Field
-                      label="Section Title"
-                      value={homeHeadings.trendingTitle}
-                      onChange={(v) => setHomeHeadings({ ...homeHeadings, trendingTitle: v })}
-                      placeholder="Trending Print Catalogue"
-                    />
-                    <Field
-                      label="Section Subtitle"
-                      value={homeHeadings.trendingSubtitle}
-                      onChange={(v) => setHomeHeadings({ ...homeHeadings, trendingSubtitle: v })}
-                      placeholder="Top rated commercial solutions popular this month"
-                    />
-                  </div>
-                </div>
+                    {/* Corporate Essentials */}
+                    <div className="space-y-3 pt-4 border-t border-[var(--border)]">
+                      <h3 className="text-xs font-extrabold uppercase tracking-wider text-[#0082CA]">Corporate & Business Printing</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <Field
+                          label={`Section Title (${langLabel})`}
+                          value={homeHeadings[fKey('corporateTitle')] || ''}
+                          onChange={(v) => setHomeHeadings({ ...homeHeadings, [fKey('corporateTitle')]: v })}
+                          placeholder="Corporate Essentials & Gifting"
+                        />
+                        <Field
+                          label={`Section Subtitle (${langLabel})`}
+                          value={homeHeadings[fKey('corporateSubtitle')] || ''}
+                          onChange={(v) => setHomeHeadings({ ...homeHeadings, [fKey('corporateSubtitle')]: v })}
+                          placeholder="Bulk corporate solutions with custom GST invoicing"
+                        />
+                      </div>
+                    </div>
 
-                {/* Popular Searches */}
-                <div className="space-y-3 pt-4 border-t border-[var(--border)]">
-                  <h3 className="text-xs font-extrabold uppercase tracking-wider text-[#0082CA]">Popular Searches Bar</h3>
-                  <Field
-                    label="Section Title"
-                    value={homeHeadings.popularSearchesTitle}
-                    onChange={(v) => setHomeHeadings({ ...homeHeadings, popularSearchesTitle: v })}
-                    placeholder="Popular Searches"
-                  />
-                </div>
-              </div>
+                    {/* Trending Products */}
+                    <div className="space-y-3 pt-4 border-t border-[var(--border)]">
+                      <h3 className="text-xs font-extrabold uppercase tracking-wider text-[#0082CA]">Trending / Top Rated Section</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <Field
+                          label={`Section Title (${langLabel})`}
+                          value={homeHeadings[fKey('trendingTitle')] || ''}
+                          onChange={(v) => setHomeHeadings({ ...homeHeadings, [fKey('trendingTitle')]: v })}
+                          placeholder="Trending Print Catalogue"
+                        />
+                        <Field
+                          label={`Section Subtitle (${langLabel})`}
+                          value={homeHeadings[fKey('trendingSubtitle')] || ''}
+                          onChange={(v) => setHomeHeadings({ ...homeHeadings, [fKey('trendingSubtitle')]: v })}
+                          placeholder="Top rated commercial solutions popular this month"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Popular Searches */}
+                    <div className="space-y-3 pt-4 border-t border-[var(--border)]">
+                      <h3 className="text-xs font-extrabold uppercase tracking-wider text-[#0082CA]">Popular Searches Bar</h3>
+                      <Field
+                        label={`Section Title (${langLabel})`}
+                        value={homeHeadings[fKey('popularSearchesTitle')] || ''}
+                        onChange={(v) => setHomeHeadings({ ...homeHeadings, [fKey('popularSearchesTitle')]: v })}
+                        placeholder="Popular Searches"
+                      />
+                    </div>
+                  </div>
+                );
+              })()}
 
               <SaveButton onClick={saveHeadings} label="Save Section Headings" />
             </div>
@@ -1559,88 +1707,109 @@ export default function CMSPage() {
           ) : activeTab === 'contact' ? (
             /* TAB 8: CONTACT DETAILS */
             <div className="space-y-6 max-w-3xl">
-              <div>
-                <h2 className="text-lg font-bold text-[var(--text-main)]">Store Contact Information</h2>
-                <p className="text-xs text-[var(--text-muted)] mt-0.5">
-                  Shared across Footer, Support Desk, Header mobile drawer, and customer notification receipts.
-                </p>
-              </div>
-
-              <div className="neu-flat rounded-xl p-6 space-y-5">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <Field
-                    label="Customer Support Helpline (Calling)"
-                    value={contactInfo.supportPhone}
-                    onChange={(v) => setContactInfo({ ...contactInfo, supportPhone: v })}
-                    placeholder="+91 7700054984"
-                  />
-                  <Field
-                    label="WhatsApp Assistance Number"
-                    value={contactInfo.whatsappNumber}
-                    onChange={(v) => setContactInfo({ ...contactInfo, whatsappNumber: v })}
-                    placeholder="+91 7700054984"
-                  />
-                  <Field
-                    label="Support Email"
-                    value={contactInfo.supportEmail}
-                    onChange={(v) => setContactInfo({ ...contactInfo, supportEmail: v })}
-                    placeholder="imagemazaprintwala@gmail.com"
-                  />
-                  <Field
-                    label="Working Hours Notice"
-                    value={contactInfo.workingHours}
-                    onChange={(v) => setContactInfo({ ...contactInfo, workingHours: v })}
-                    placeholder="Mon - Sat: 10:00 AM - 7:00 PM"
-                  />
-                </div>
-
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
                 <div>
-                  <Field
-                    label="GSTIN Number (for corporate billing)"
-                    value={contactInfo.gstin}
-                    onChange={(v) => setContactInfo({ ...contactInfo, gstin: v })}
-                    placeholder="27AAAAA0000A1Z5"
-                  />
+                  <h2 className="text-lg font-bold text-[var(--text-main)]">Store Contact Information</h2>
+                  <p className="text-xs text-[var(--text-muted)] mt-0.5">
+                    Shared across Footer, Support Desk, Header mobile drawer, and customer notification receipts.
+                  </p>
                 </div>
-
-                <h3 className="text-xs font-bold uppercase tracking-wider text-[var(--text-muted)] pt-4 border-t border-[var(--border)]">
-                  Physical Office & Dispatch Address
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <Field
-                    label="Address Line 1"
-                    value={contactInfo.addressLine1}
-                    onChange={(v) => setContactInfo({ ...contactInfo, addressLine1: v })}
-                    placeholder="Shop/Unit No., Building Name"
-                  />
-                  <Field
-                    label="Address Line 2"
-                    value={contactInfo.addressLine2}
-                    onChange={(v) => setContactInfo({ ...contactInfo, addressLine2: v })}
-                    placeholder="Street, Landmark, Area"
-                  />
-                  <Field
-                    label="City"
-                    value={contactInfo.city}
-                    onChange={(v) => setContactInfo({ ...contactInfo, city: v })}
-                    placeholder="Mumbai"
-                  />
-                  <div className="grid grid-cols-2 gap-2">
-                    <Field
-                      label="State"
-                      value={contactInfo.state}
-                      onChange={(v) => setContactInfo({ ...contactInfo, state: v })}
-                      placeholder="Maharashtra"
-                    />
-                    <Field
-                      label="PIN Code"
-                      value={contactInfo.pincode}
-                      onChange={(v) => setContactInfo({ ...contactInfo, pincode: v })}
-                      placeholder="400001"
-                    />
-                  </div>
-                </div>
+                <LocaleSelector current={contactLocale} onChange={setContactLocale} />
               </div>
+
+              {(() => {
+                const suffix = contactLocale === 'hi' ? '_hi' : contactLocale === 'mr' ? '_mr' : '';
+                const langLabel = contactLocale === 'hi' ? 'Hindi (हिंदी)' : contactLocale === 'mr' ? 'Marathi (मराठी)' : 'English';
+                const cKey = (name) => `${name}${suffix}`;
+
+                return (
+                  <div className="neu-flat rounded-xl p-6 space-y-5">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <Field
+                        label="Customer Support Helpline (Calling)"
+                        value={contactInfo.supportPhone}
+                        onChange={(v) => setContactInfo({ ...contactInfo, supportPhone: v })}
+                        placeholder="+91 7700054984"
+                      />
+                      <Field
+                        label="WhatsApp Assistance Number"
+                        value={contactInfo.whatsappNumber}
+                        onChange={(v) => setContactInfo({ ...contactInfo, whatsappNumber: v })}
+                        placeholder="+91 7700054984"
+                      />
+                      <Field
+                        label="Support Email"
+                        value={contactInfo.supportEmail}
+                        onChange={(v) => setContactInfo({ ...contactInfo, supportEmail: v })}
+                        placeholder="imagemazaprintwala@gmail.com"
+                      />
+                      <Field
+                        label={`Working Hours Notice (${langLabel})`}
+                        value={contactInfo[cKey('workingHours')] || ''}
+                        onChange={(v) => setContactInfo({ ...contactInfo, [cKey('workingHours')]: v })}
+                        placeholder="Mon - Sat: 10:00 AM - 7:00 PM"
+                      />
+                    </div>
+
+                    <div>
+                      <Field
+                        label="GSTIN Number (for corporate billing)"
+                        value={contactInfo.gstin}
+                        onChange={(v) => setContactInfo({ ...contactInfo, gstin: v })}
+                        placeholder="27AAAAA0000A1Z5"
+                      />
+                    </div>
+
+                    <h3 className="text-xs font-bold uppercase tracking-wider text-[var(--text-muted)] pt-4 border-t border-[var(--border)]">
+                      Physical Office & Dispatch Address ({langLabel})
+                    </h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <Field
+                        label={`Address Line 1 (${langLabel})`}
+                        value={contactInfo[cKey('addressLine1')] || ''}
+                        onChange={(v) => setContactInfo({ ...contactInfo, [cKey('addressLine1')]: v })}
+                        placeholder="Shop/Unit No., Building Name"
+                      />
+                      <Field
+                        label={`Address Line 2 (${langLabel})`}
+                        value={contactInfo[cKey('addressLine2')] || ''}
+                        onChange={(v) => setContactInfo({ ...contactInfo, [cKey('addressLine2')]: v })}
+                        placeholder="Street, Landmark, Area"
+                      />
+                      <Field
+                        label={`City (${langLabel})`}
+                        value={contactInfo[cKey('city')] || ''}
+                        onChange={(v) => setContactInfo({ ...contactInfo, [cKey('city')]: v })}
+                        placeholder="Mumbai"
+                      />
+                      <div className="grid grid-cols-2 gap-2">
+                        <Field
+                          label={`State (${langLabel})`}
+                          value={contactInfo[cKey('state')] || ''}
+                          onChange={(v) => setContactInfo({ ...contactInfo, [cKey('state')]: v })}
+                          placeholder="Maharashtra"
+                        />
+                        <Field
+                          label="PIN Code"
+                          value={contactInfo.pincode}
+                          onChange={(v) => setContactInfo({ ...contactInfo, pincode: v })}
+                          placeholder="400001"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="pt-2">
+                      <Field
+                        label={`Store / Dispatch Address Override (${langLabel})`}
+                        value={contactInfo[cKey('physicalAddress')] || ''}
+                        onChange={(v) => setContactInfo({ ...contactInfo, [cKey('physicalAddress')]: v })}
+                        placeholder="Complete postal address for footer and support desk..."
+                        help="Optional override: When filled, storefront uses this exact string directly for this language."
+                      />
+                    </div>
+                  </div>
+                );
+              })()}
 
               <SaveButton onClick={saveContactInfo} label="Save Contact Details" />
             </div>
@@ -1656,43 +1825,69 @@ export default function CMSPage() {
 
               {/* Payment Strip Badges */}
               <div className="neu-flat rounded-xl p-6 space-y-4">
-                <div className="flex items-center justify-between pb-3 border-b border-[var(--border)]">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pb-3 border-b border-[var(--border)]">
                   <div>
                     <h3 className="text-sm font-bold text-[var(--text-main)]">Payment Strip Badges</h3>
-                    <p className="text-xs text-[var(--text-muted)]">Toggle payment brand logos displayed at the footer bottom.</p>
+                    <p className="text-xs text-[var(--text-muted)]">Toggle payment brand logos and customize localized badge labels.</p>
                   </div>
-                  <label className="text-xs font-bold text-[var(--text-main)] flex items-center gap-1.5 cursor-pointer">
-                    <input
-                      type="checkbox"
-                      checked={Boolean(payments.enabled !== false)}
-                      onChange={(e) => setPayments({ ...payments, enabled: e.target.checked })}
-                      className="accent-[#0082CA] rounded cursor-pointer"
-                    />
-                    Display Payment Strip
-                  </label>
-                </div>
-
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
-                  {(payments.badges || []).map((badge) => (
-                    <label
-                      key={badge.id}
-                      onClick={() => togglePaymentBadge(badge.id)}
-                      className={`p-3 neu-flat rounded-xl border flex items-center gap-2.5 cursor-pointer transition-all ${
-                        badge.enabled
-                          ? 'border-[#0082CA] bg-[#0082CA]/5 text-[var(--text-main)] font-bold'
-                          : 'border-[var(--border)] opacity-60 text-[var(--text-muted)]'
-                      }`}
-                    >
+                  <div className="flex items-center gap-3">
+                    <LocaleSelector current={paymentLocale} onChange={setPaymentLocale} />
+                    <label className="text-xs font-bold text-[var(--text-main)] flex items-center gap-1.5 cursor-pointer">
                       <input
                         type="checkbox"
-                        checked={Boolean(badge.enabled)}
-                        readOnly
-                        className="accent-[#0082CA] rounded"
+                        checked={Boolean(payments.enabled !== false)}
+                        onChange={(e) => setPayments({ ...payments, enabled: e.target.checked })}
+                        className="accent-[#0082CA] rounded cursor-pointer"
                       />
-                      <span className="text-xs font-bold">{badge.label}</span>
+                      Display Strip
                     </label>
-                  ))}
+                  </div>
                 </div>
+
+                {(() => {
+                  const labelKey = paymentLocale === 'hi' ? 'label_hi' : paymentLocale === 'mr' ? 'label_mr' : 'label';
+                  const langLabel = paymentLocale === 'hi' ? 'Hindi (हिंदी)' : paymentLocale === 'mr' ? 'Marathi (मराठी)' : 'English';
+
+                  return (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 pt-2">
+                      {(payments.badges || []).map((badge) => (
+                        <div
+                          key={badge.id}
+                          className={`p-3 neu-flat rounded-xl border flex flex-col gap-2 transition-all ${
+                            badge.enabled
+                              ? 'border-[#0082CA]/50 bg-[#0082CA]/5'
+                              : 'border-[var(--border)] opacity-60'
+                          }`}
+                        >
+                          <div className="flex items-center justify-between">
+                            <label className="flex items-center gap-2 cursor-pointer text-xs font-bold text-[var(--text-main)]">
+                              <input
+                                type="checkbox"
+                                checked={Boolean(badge.enabled)}
+                                onChange={() => togglePaymentBadge(badge.id)}
+                                className="accent-[#0082CA] rounded cursor-pointer"
+                              />
+                              <span className="uppercase">{badge.id}</span>
+                            </label>
+                            <span className="text-[10px] text-[var(--text-muted)] font-mono">{badge.enabled ? 'Active' : 'Disabled'}</span>
+                          </div>
+                          <input
+                            type="text"
+                            value={badge[labelKey] || ''}
+                            onChange={(e) => {
+                              const nextBadges = (payments.badges || []).map((b) =>
+                                b.id === badge.id ? { ...b, [labelKey]: e.target.value } : b
+                              );
+                              setPayments({ ...payments, badges: nextBadges });
+                            }}
+                            placeholder={`Label (${langLabel})`}
+                            className="w-full px-2.5 py-1.5 neu-flat rounded-lg text-xs bg-[var(--bg-card)] text-[var(--text-main)] outline-none"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  );
+                })()}
               </div>
 
               {/* Footer Links & Social */}
@@ -2182,11 +2377,14 @@ export default function CMSPage() {
           ) : activeTab === 'seo' ? (
             /* TAB 13: PAGE SEO & META */
             <div className="space-y-6 max-w-3xl">
-              <div>
-                <h2 className="text-lg font-bold text-[var(--text-main)]">Page SEO Metadata & OpenGraph</h2>
-                <p className="text-xs text-[var(--text-muted)] mt-0.5">
-                  Configure search engine titles, meta descriptions, and social share image cards for major storefront routes.
-                </p>
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                <div>
+                  <h2 className="text-lg font-bold text-[var(--text-main)]">Page SEO Metadata & OpenGraph</h2>
+                  <p className="text-xs text-[var(--text-muted)] mt-0.5">
+                    Configure search engine titles, meta descriptions, and social share image cards for major storefront routes.
+                  </p>
+                </div>
+                <LocaleSelector current={seoLocale} onChange={setSeoLocale} />
               </div>
 
               {/* Subtabs for routes */}
@@ -2211,151 +2409,285 @@ export default function CMSPage() {
                 ))}
               </div>
 
-              <div className="neu-flat rounded-xl p-6 space-y-4">
-                <Field
-                  label="Browser & Search Title"
-                  value={pageMeta[activeMetaPage]?.title}
-                  onChange={(v) =>
-                    setPageMeta({
-                      ...pageMeta,
-                      [activeMetaPage]: { ...pageMeta[activeMetaPage], title: v },
-                    })
-                  }
-                  placeholder="e.g. Maza Printwala | Online Printing Services"
-                  help="Optimal length: 50-60 characters."
-                />
+              {(() => {
+                const titleKey = seoLocale === 'hi' ? 'title_hi' : seoLocale === 'mr' ? 'title_mr' : 'title';
+                const descKey = seoLocale === 'hi' ? 'description_hi' : seoLocale === 'mr' ? 'description_mr' : 'description';
+                const kwKey = seoLocale === 'hi' ? 'keywords_hi' : seoLocale === 'mr' ? 'keywords_mr' : 'keywords';
+                const langLabel = seoLocale === 'hi' ? 'Hindi (हिंदी)' : seoLocale === 'mr' ? 'Marathi (मराठी)' : 'English';
 
-                <TextAreaField
-                  label="Search Meta Description"
-                  value={pageMeta[activeMetaPage]?.description}
-                  onChange={(v) =>
-                    setPageMeta({
-                      ...pageMeta,
-                      [activeMetaPage]: { ...pageMeta[activeMetaPage], description: v },
-                    })
-                  }
-                  rows={3}
-                  placeholder="Search snippet summary..."
-                  help="Optimal length: 140-160 characters."
-                />
+                return (
+                  <div className="neu-flat rounded-xl p-6 space-y-4">
+                    <Field
+                      label={`Browser & Search Title (${langLabel})`}
+                      value={pageMeta[activeMetaPage]?.[titleKey] || ''}
+                      onChange={(v) =>
+                        setPageMeta({
+                          ...pageMeta,
+                          [activeMetaPage]: { ...pageMeta[activeMetaPage], [titleKey]: v },
+                        })
+                      }
+                      placeholder="e.g. Maza Printwala | Online Printing Services"
+                      help="Optimal length: 50-60 characters."
+                    />
 
-                <Field
-                  label="Keywords (comma separated)"
-                  value={pageMeta[activeMetaPage]?.keywords}
-                  onChange={(v) =>
-                    setPageMeta({
-                      ...pageMeta,
-                      [activeMetaPage]: { ...pageMeta[activeMetaPage], keywords: v },
-                    })
-                  }
-                  placeholder="printing, visiting cards, bulk print, corporate gifting"
-                />
+                    <TextAreaField
+                      label={`Search Meta Description (${langLabel})`}
+                      value={pageMeta[activeMetaPage]?.[descKey] || ''}
+                      onChange={(v) =>
+                        setPageMeta({
+                          ...pageMeta,
+                          [activeMetaPage]: { ...pageMeta[activeMetaPage], [descKey]: v },
+                        })
+                      }
+                      rows={3}
+                      placeholder="Search snippet summary..."
+                      help="Optimal length: 140-160 characters."
+                    />
 
-                <ImageField
-                  label="Social Share / OG Image (Upload to Cloudinary)"
-                  value={pageMeta[activeMetaPage]?.ogImage}
-                  onChange={(url) =>
-                    setPageMeta({
-                      ...pageMeta,
-                      [activeMetaPage]: { ...pageMeta[activeMetaPage], ogImage: url },
-                    })
-                  }
-                  placeholder="https://res.cloudinary.com/... or click Upload"
-                  help="Recommended size: 1200x630px. Used by WhatsApp, Facebook, LinkedIn, Twitter preview cards."
-                />
-              </div>
+                    <Field
+                      label={`Keywords (${langLabel}, comma separated)`}
+                      value={pageMeta[activeMetaPage]?.[kwKey] || ''}
+                      onChange={(v) =>
+                        setPageMeta({
+                          ...pageMeta,
+                          [activeMetaPage]: { ...pageMeta[activeMetaPage], [kwKey]: v },
+                        })
+                      }
+                      placeholder="printing, visiting cards, bulk print, corporate gifting"
+                    />
+
+                    <ImageField
+                      label="Social Share / OG Image (Upload to Cloudinary)"
+                      value={pageMeta[activeMetaPage]?.ogImage}
+                      onChange={(url) =>
+                        setPageMeta({
+                          ...pageMeta,
+                          [activeMetaPage]: { ...pageMeta[activeMetaPage], ogImage: url },
+                        })
+                      }
+                      placeholder="https://res.cloudinary.com/... or click Upload"
+                      help="Recommended size: 1200x630px. Used by WhatsApp, Facebook, LinkedIn, Twitter preview cards."
+                    />
+                  </div>
+                );
+              })()}
 
               <SaveButton onClick={savePageMeta} label={`Save ${activeMetaPage.toUpperCase()} Metadata`} />
             </div>
           ) : activeTab === 'menu' ? (
             /* TAB 14: NAVIGATION MENU */
             <div className="space-y-6 max-w-3xl">
-              <div>
-                <h2 className="text-lg font-bold text-[var(--text-main)]">Navigation & Mega Menu Sequence</h2>
-                <p className="text-xs text-[var(--text-muted)] mt-0.5">
-                  Control which categories appear first in the horizontal header strip and mega menu dropdown.
-                </p>
-              </div>
-
-              <div className="neu-flat rounded-xl p-6 space-y-4">
-                <span className="text-xs font-bold text-[var(--text-muted)] block pb-2 border-b border-[var(--border)]">
-                  Category Display Sequence & Visibility
-                </span>
-                <div className="space-y-2">
-                  {(navMenu.orderedSlugs || []).map((slug, idx) => {
-                    const catObj = allCategories.find((c) => c.slug === slug);
-                    const displayName = catObj?.name || slug.replace(/-/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase());
-                    const isHidden = (navMenu.hiddenSlugs || []).includes(slug);
-
-                    return (
-                      <div
-                        key={slug}
-                        className={`flex items-center justify-between p-3 rounded-lg border transition-all ${
-                          isHidden
-                            ? 'neu-flat/40 border-dashed border-[var(--border)] opacity-60'
-                            : 'neu-flat border-[var(--border)]'
-                        }`}
-                      >
-                        <div className="flex items-center gap-3">
-                          <span className="text-xs font-black text-[#0082CA] w-6">{idx + 1}.</span>
-                          <div>
-                            <span className="text-xs font-bold text-[var(--text-main)]">{displayName}</span>
-                            <span className="text-[10px] text-[var(--text-muted)] ml-2">({slug})</span>
-                          </div>
-                        </div>
-
-                        <div className="flex items-center gap-2">
-                          <label className="text-xs font-semibold text-[var(--text-muted)] flex items-center gap-1.5 cursor-pointer mr-2">
-                            <input
-                              type="checkbox"
-                              checked={!isHidden}
-                              onChange={(e) => {
-                                const currentHidden = navMenu.hiddenSlugs || [];
-                                const nextHidden = e.target.checked
-                                  ? currentHidden.filter((s) => s !== slug)
-                                  : [...currentHidden, slug];
-                                setNavMenu({ ...navMenu, hiddenSlugs: nextHidden });
-                              }}
-                              className="accent-[#0082CA] rounded cursor-pointer"
-                            />
-                            Visible
-                          </label>
-                          <button
-                            type="button"
-                            disabled={idx === 0}
-                            onClick={() => {
-                              const nextOrder = [...navMenu.orderedSlugs];
-                              const temp = nextOrder[idx - 1];
-                              nextOrder[idx - 1] = nextOrder[idx];
-                              nextOrder[idx] = temp;
-                              setNavMenu({ ...navMenu, orderedSlugs: nextOrder });
-                            }}
-                            className="p-1 text-[var(--text-faint)] hover:text-[var(--text-main)] disabled:opacity-20 cursor-pointer"
-                            title="Move Up"
-                          >
-                            <ChevronUp className="w-4 h-4" />
-                          </button>
-                          <button
-                            type="button"
-                            disabled={idx === navMenu.orderedSlugs.length - 1}
-                            onClick={() => {
-                              const nextOrder = [...navMenu.orderedSlugs];
-                              const temp = nextOrder[idx + 1];
-                              nextOrder[idx + 1] = nextOrder[idx];
-                              nextOrder[idx] = temp;
-                              setNavMenu({ ...navMenu, orderedSlugs: nextOrder });
-                            }}
-                            className="p-1 text-[var(--text-faint)] hover:text-[var(--text-main)] disabled:opacity-20 cursor-pointer"
-                            title="Move Down"
-                          >
-                            <ChevronDown className="w-4 h-4" />
-                          </button>
-                        </div>
-                      </div>
-                    );
-                  })}
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                <div>
+                  <h2 className="text-lg font-bold text-[var(--text-main)]">Navigation & Mega Menu Sequence</h2>
+                  <p className="text-xs text-[var(--text-muted)] mt-0.5">
+                    Control which categories appear first in the horizontal header strip and mega menu dropdown.
+                  </p>
                 </div>
+                <LocaleSelector current={menuLocale} onChange={setMenuLocale} />
               </div>
+
+              {(() => {
+                const langLabel = menuLocale === 'hi' ? 'Hindi (हिंदी)' : menuLocale === 'mr' ? 'Marathi (मराठी)' : 'English';
+                const linkLabelKey = menuLocale === 'hi' ? 'label_hi' : menuLocale === 'mr' ? 'label_mr' : 'label';
+                const linkBadgeKey = menuLocale === 'hi' ? 'badge_hi' : menuLocale === 'mr' ? 'badge_mr' : 'badge';
+
+                return (
+                  <div className="neu-flat rounded-xl p-6 space-y-6">
+                    <div>
+                      <div className="flex items-center justify-between pb-2 border-b border-[var(--border)] mb-3">
+                        <span className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-wider">
+                          Category Sequence & Visibility
+                        </span>
+                        <span className="text-[11px] text-[var(--text-muted)]">
+                          Editing labels in: <strong className="text-[#0082CA]">{langLabel}</strong>
+                        </span>
+                      </div>
+                      <div className="space-y-2">
+                        {(navMenu.orderedSlugs || []).map((slug, idx) => {
+                          const catObj = allCategories.find((c) => c.slug === slug);
+                          const defaultName = catObj?.name || slug.replace(/-/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase());
+                          const isHidden = (navMenu.hiddenSlugs || []).includes(slug);
+                          const overrideKey = menuLocale === 'hi' ? `${slug}_hi` : menuLocale === 'mr' ? `${slug}_mr` : slug;
+
+                          return (
+                            <div
+                              key={slug}
+                              className={`flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 p-3 rounded-lg border transition-all ${
+                                isHidden
+                                  ? 'neu-flat/40 border-dashed border-[var(--border)] opacity-60'
+                                  : 'neu-flat border-[var(--border)]'
+                              }`}
+                            >
+                              <div className="flex items-center gap-3">
+                                <span className="text-xs font-black text-[#0082CA] w-6">{idx + 1}.</span>
+                                <div>
+                                  <span className="text-xs font-bold text-[var(--text-main)]">{defaultName}</span>
+                                  <span className="text-[10px] text-[var(--text-muted)] ml-2">({slug})</span>
+                                </div>
+                              </div>
+
+                              <div className="flex items-center gap-2 w-full sm:w-auto justify-between sm:justify-end">
+                                <input
+                                  type="text"
+                                  value={navMenu.labels?.[overrideKey] || ''}
+                                  onChange={(e) => {
+                                    const nextLabels = { ...(navMenu.labels || {}), [overrideKey]: e.target.value };
+                                    setNavMenu({ ...navMenu, labels: nextLabels });
+                                  }}
+                                  placeholder={`Label (${langLabel})`}
+                                  className="px-2.5 py-1 text-xs neu-flat rounded-md bg-[var(--bg-card)] text-[var(--text-main)] outline-none w-32 sm:w-36"
+                                />
+                                <label className="text-xs font-semibold text-[var(--text-muted)] flex items-center gap-1.5 cursor-pointer">
+                                  <input
+                                    type="checkbox"
+                                    checked={!isHidden}
+                                    onChange={(e) => {
+                                      const currentHidden = navMenu.hiddenSlugs || [];
+                                      const nextHidden = e.target.checked
+                                        ? currentHidden.filter((s) => s !== slug)
+                                        : [...currentHidden, slug];
+                                      setNavMenu({ ...navMenu, hiddenSlugs: nextHidden });
+                                    }}
+                                    className="accent-[#0082CA] rounded cursor-pointer"
+                                  />
+                                  Visible
+                                </label>
+                                <button
+                                  type="button"
+                                  disabled={idx === 0}
+                                  onClick={() => {
+                                    const nextOrder = [...navMenu.orderedSlugs];
+                                    const temp = nextOrder[idx - 1];
+                                    nextOrder[idx - 1] = nextOrder[idx];
+                                    nextOrder[idx] = temp;
+                                    setNavMenu({ ...navMenu, orderedSlugs: nextOrder });
+                                  }}
+                                  className="p-1 text-[var(--text-faint)] hover:text-[var(--text-main)] disabled:opacity-20 cursor-pointer"
+                                  title="Move Up"
+                                >
+                                  <ChevronUp className="w-4 h-4" />
+                                </button>
+                                <button
+                                  type="button"
+                                  disabled={idx === navMenu.orderedSlugs.length - 1}
+                                  onClick={() => {
+                                    const nextOrder = [...navMenu.orderedSlugs];
+                                    const temp = nextOrder[idx + 1];
+                                    nextOrder[idx + 1] = nextOrder[idx];
+                                    nextOrder[idx] = temp;
+                                    setNavMenu({ ...navMenu, orderedSlugs: nextOrder });
+                                  }}
+                                  className="p-1 text-[var(--text-faint)] hover:text-[var(--text-main)] disabled:opacity-20 cursor-pointer"
+                                  title="Move Down"
+                                >
+                                  <ChevronDown className="w-4 h-4" />
+                                </button>
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+
+                    <div className="pt-4 border-t border-[var(--border)]">
+                      <div className="flex items-center justify-between mb-3">
+                        <div>
+                          <span className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-wider block">
+                            Custom Header Navigation Links
+                          </span>
+                          <span className="text-[11px] text-[var(--text-muted)]">
+                            Direct shortcuts shown in header alongside categories (e.g. Bulk Enquiry, About Us).
+                          </span>
+                        </div>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            const nextLinks = [
+                              ...(navMenu.customLinks || []),
+                              { label: 'New Link', href: '/', badge: '', enabled: true },
+                            ];
+                            setNavMenu({ ...navMenu, customLinks: nextLinks });
+                          }}
+                          className="px-3 py-1.5 neu-flat text-xs font-bold text-[#0082CA] rounded-lg flex items-center gap-1 cursor-pointer"
+                        >
+                          <Plus className="w-3 h-3" /> Add Link
+                        </button>
+                      </div>
+
+                      <div className="space-y-3">
+                        {(navMenu.customLinks || []).map((link, lIdx) => (
+                          <div key={lIdx} className="p-3 neu-flat rounded-xl space-y-2">
+                            <div className="flex items-center justify-between">
+                              <span className="text-xs font-bold text-[var(--text-muted)]">Link #{lIdx + 1}</span>
+                              <div className="flex items-center gap-2">
+                                <label className="text-xs font-semibold text-[var(--text-muted)] flex items-center gap-1 cursor-pointer">
+                                  <input
+                                    type="checkbox"
+                                    checked={link.enabled !== false}
+                                    onChange={(e) => {
+                                      const nextLinks = [...(navMenu.customLinks || [])];
+                                      nextLinks[lIdx] = { ...nextLinks[lIdx], enabled: e.target.checked };
+                                      setNavMenu({ ...navMenu, customLinks: nextLinks });
+                                    }}
+                                    className="accent-[#0082CA] rounded cursor-pointer"
+                                  />
+                                  Active
+                                </label>
+                                <button
+                                  type="button"
+                                  onClick={() => {
+                                    const nextLinks = (navMenu.customLinks || []).filter((_, i) => i !== lIdx);
+                                    setNavMenu({ ...navMenu, customLinks: nextLinks });
+                                  }}
+                                  className="text-[var(--text-faint)] hover:text-rose-600 p-1 cursor-pointer"
+                                >
+                                  <Trash2 className="w-3.5 h-3.5" />
+                                </button>
+                              </div>
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                              <input
+                                type="text"
+                                value={link[linkLabelKey] || ''}
+                                onChange={(e) => {
+                                  const nextLinks = [...(navMenu.customLinks || [])];
+                                  nextLinks[lIdx] = { ...nextLinks[lIdx], [linkLabelKey]: e.target.value };
+                                  setNavMenu({ ...navMenu, customLinks: nextLinks });
+                                }}
+                                placeholder={`Label (${langLabel})`}
+                                className="px-3 py-1.5 neu-flat rounded-lg text-xs bg-[var(--bg-card)] text-[var(--text-main)] outline-none"
+                              />
+                              <input
+                                type="text"
+                                value={link.href || ''}
+                                onChange={(e) => {
+                                  const nextLinks = [...(navMenu.customLinks || [])];
+                                  nextLinks[lIdx] = { ...nextLinks[lIdx], href: e.target.value };
+                                  setNavMenu({ ...navMenu, customLinks: nextLinks });
+                                }}
+                                placeholder="/path (e.g. /bulk-enquiry)"
+                                className="px-3 py-1.5 neu-flat rounded-lg text-xs bg-[var(--bg-card)] text-[var(--text-main)] outline-none"
+                              />
+                              <input
+                                type="text"
+                                value={link[linkBadgeKey] || ''}
+                                onChange={(e) => {
+                                  const nextLinks = [...(navMenu.customLinks || [])];
+                                  nextLinks[lIdx] = { ...nextLinks[lIdx], [linkBadgeKey]: e.target.value };
+                                  setNavMenu({ ...navMenu, customLinks: nextLinks });
+                                }}
+                                placeholder={`Badge (${langLabel}) (e.g. Hot)`}
+                                className="px-3 py-1.5 neu-flat rounded-lg text-xs bg-[var(--bg-card)] text-[var(--text-main)] outline-none"
+                              />
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })()}
 
               <SaveButton onClick={saveNavMenu} label="Save Menu Sequence" />
             </div>
