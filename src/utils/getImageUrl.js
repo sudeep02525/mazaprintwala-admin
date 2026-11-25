@@ -13,12 +13,22 @@
  * - "/images/..." (served by Next public) -> returned unchanged
  * - anything else ("/uploads/artwork/x.pdf") -> prefixed with the API URL
  */
-export const getImageUrl = (value) => {
+export const getImageUrl = (value, transform = 'f_auto,q_auto,w_800,c_limit') => {
   if (!value) return '';
   if (typeof value !== 'string') return '';
   const path = value.trim();
   if (!path) return '';
-  if (path.startsWith('http://') || path.startsWith('https://') || path.startsWith('data:')) {
+  if (path.startsWith('data:')) return path;
+
+  // Cloudinary optimization: automatic modern format (webp/avif), auto compression, responsive max-width
+  if (path.includes('res.cloudinary.com') && path.includes('/image/upload/')) {
+    if (!path.includes('/f_auto') && !path.includes('/q_auto')) {
+      return path.replace('/image/upload/', `/image/upload/${transform}/`);
+    }
+    return path;
+  }
+
+  if (path.startsWith('http://') || path.startsWith('https://')) {
     return path;
   }
   if (path.startsWith('/images/')) return path;
